@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: navy;
+        }
+        .container{
+            height: 500px;
+            width: 800px;
+            background-color: white;
+            border: 3px solid navy;
+            display: flex;
+        }
+        .box1{
+            background-color: rgb(90, 232, 90);
+            height: 100%;
+            width: 20%;
+            border: 3px solid navy;
+        }
+        .box2{
+            background-color: red;
+            height: 100%;
+            width: 50%;
+            border: 3px solid navy;
+        }
+        .box3{
+            background-color: yellow;
+            height: 100%;
+            width: 30%;
+            border: 3px solid navy;
+        }
+        .a1{
+            background-color: red;
+            height: 30%;
+            width: 100%;
+            border: 3px solid navy;
+        }
+        .a2{
+            background-color: rgb(90, 232, 90);
+            height: 70%;
+            width: 100%;
+            border: 3px solid navy;
+        }
+        .b1{
+            background-color: rgb(90, 232, 90);
+            height: 33%;
+            width: 100%;
+            border: 3px solid navy;
+        }
+        .b2{
+            background-color: rgb(90, 232, 90);
+            height: 33%;
+            width: 100%;
+            border: 3px solid navy;
+            display: flex;
+        }
+        .b3{
+            background-color: rgb(90, 232, 90);
+            height: 33%;
+            width: 100%;
+            border: 3px solid navy; 
+            display: flex;
+        }
+        .c1{
+            background-color: yellow;
+            height: 100%;
+            width: 50%;
+            border: 3px solid navy;
+        }
+        .c2{
+            background-color: red;
+            height: 100%;
+            width: 50%;
+            border: 3px solid navy;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div class="b1"></div>
+            <div class="b2">
+                <div class="c1"></div>
+                <div class="c2"></div>
+            </div>
+            <div class="b3">
+                <div class="c2"></div>
+                <div class="c1"></div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="a1"></div>
+            <div class="a2"></div>
+        </div>
+    </div>
+</body>
+</html>

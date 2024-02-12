@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Properties</title>
+    <style>
+        /* a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        } */
+        /* body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        } */
+        /* .Box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black; */
+            /* overflow: hidden; */
+            /* overflow: auto; */
+            /* overflow: scroll; */
+        /* }
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+        }
+        .box{
+            height: 40%;
+            width: 40%;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .box:nth-child(1){
+            background-color: green;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .container{
+            height: 500px;
+            border:2px solid blue;
+            width: 500px;
+            position: relative;
+        }
+        .box{
+            height: 40%;
+            width: 40%;
+            background-color: yellow;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .box:nth-child(1){
+            background-color: red;
+            /* display: flex;
+            justify-content:left;
+            align-items:end;
+            color: white; */
+            top: 0px;
+            left: 12%;
+            top: 15%;
+            z-index: 1;
+        }
+        .box:nth-child(2){
+            background-color: blue;
+            bottom: 0px;
+            left: 10%;
+            bottom: 13%;
+        }
+        .box:nth-child(3){
+            background-color: pink;
+            right: 0px;
+            top: 10%;
+            right: 20%;
+        }
+        .box:nth-child(4){
+            background-color: green;
+            right: 0px;
+            bottom: 0px;
+            bottom: 15%;
+            right: 15%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <a href="">This is text</a>
+
+    <ul>
+        <li>Name</li>
+        <li>About</li>
+        <li>email</li>
+        <li>Address</li>
+    </ul> -->
+
+    <!-- <div class="Box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestiae a quibusdam voluptate aliquam cupiditate qui soluta itaque. Maiores, suscipit doloremque magnam voluptatum numquam qui laborum quasi nesciunt distinctio deleniti doloribus in. Aperiam modi iusto sit, velit optio dicta cum explicabo tenetur ipsa sint reprehenderit, inventore laborum aliquam est voluptatem!</p>
+    </div> -->
+
+    <div class="container">
+        <div class="box">
+            <h2>Shruti</h2>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

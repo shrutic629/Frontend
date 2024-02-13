@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing_Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box1{
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 8px 1px 10px gray;
+            position: fixed;  
+            background-color: white;
+        }
+        .box2{
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .header1{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header2{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .header-logo{
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #000000;
+        }
+        .right-a{
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #000000;
+            padding: 8px 16px;
+        }
+        .mid{
+            height: 10%;
+            width:23%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+            letter-spacing: 3px;
+            font-family: sans-serif;
+        }
+        .BR{
+            font-size: 40px;
+            color: white;
+            height: 90%;
+            width: 30%;
+            background-color: black;
+            opacity: 0.75;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page2{
+            height: 90vh;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .second-box1{
+            height: 15%;
+            border: 2px solid black;
+        }
+        .second-box2{
+            height: 85%;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 8px;
+            
+        }
+        .img-box{
+            height: 40%;
+            width: 22%;
+            border: 2px solid black;
+            
+            /* margin-left: 10px;
+            margin-right: 10px; */
+            /* margin-top: 10px; */
+            /* margin-bottom: 10px; */
+            margin: 10px 10px;
+        }
+        #1{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="header1">
+            <a href="" class="header-logo">
+                <b>BR</b> Architects
+            </a>
+        </div>
+        <div class="header2">
+            <a href="" class="right-a">Projects</a>
+            <a href="" class="right-a">About</a>
+            <a href="" class="right-a">Contact</a>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="mid">
+            <div class="BR"><b>BR</b></div>
+            <h1>Architects</h1>
+        </div>
+    </div>
+
+    <div class="page2">
+        <div class="second-box1">
+            
+        </div>
+        <div class="second-box2">
+            <div class="img-box" id="1"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box" ></div>
+            <div class="img-box" ></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+        </div>
+    </div>
+</body>
+</html>

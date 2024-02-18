@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2_html</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.portfolio{
+    height: 160vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+.box-L{
+    height: 100vh;
+    width: 25%;
+    border: 1px solid black;
+    position: fixed;
+}
+.box-R{
+    height: 160vh;
+    width: 75%;
+    border: 1px solid black;
+    background-color: rgb(241, 245, 249);
+    position: absolute;
+    right: 0px;
+}
+.info-box{
+    height: 60%;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+.img-box{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-box{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 85%;
+    width: 55%;
+    /* border: 1px solid black;  */
+    margin-right: 33%;
+    border-radius: 5px;
+
+}
+.template{
+    height: 80%;
+    width:90%;
+    /* border: 1px solid black;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.headings{
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid black;  */
+}
+
+/* .fa-solid{
+    font-size: 3vh;
+    font-family: sans-serif;
+    color: black;
+    /* text-decoration: none; 
+} */
+.Port-R{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+
+    
+}
+.three{
+    font-size: 2vh;
+    font-family: sans-serif;
+    color: black;
+}
+.box-filter{
+    height: 6%;
+    width: 45%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+.tabs{
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HR{
+    height: 4%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-box{
+    height: 120vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cards{
+    height: 48%;
+    width: 31%;
+    /* border: 1px solid blue; */
+}
+#c3{
+    margin-top: 1%;
+}
+#c4{
+    margin-top: 1%;
+}
+#c5{
+    margin-top: 1%;
+}
+.img-card{
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* background-color: pink; */
+}
+.content-card{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: white;
+}
+.heading{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid violet; */
+    /* background-color: violet; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-left: 2%; */
+}
+.para{
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid violet; */
+    /* background-color: greenyellow; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.page-link{
+    height: 5%;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-no{
+    height: 75%;
+    width: 25%;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+    display: flex;
+}
+.link-box{
+    height: 100%;
+    width: 16.7%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    color: black;
+    font-size: 70%;
+    font-family: sans-serif;
+}
+.second-page{
+    height: 130vh;
+    width: 75%;
+    border: 1px solid black;
+    background-color: pink;
+    position: absolute;
+    right: 0px;
+}
+.half-img-box{
+    height: 35%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.img1{
+    height: 90%;
+    width: 47%;
+    /* border: 1px solid purple; */
+}
+.img2{
+    height: 90%;
+    width: 47%;
+    /* border: 1px solid purple; */
+}
+.content-page2{
+    height: 16%;
+    width: 100%;
+    border: 1px solid black;
+}
+.abt-heading{
+    height: 25%;
+    width: 100%;
+    border: 1px solid black;
+}
+.abt-content{
+    height: 75%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="portfolio">
+        <div class="box-L">
+            <div class="info-box">
+                <div class="img-box">
+                    <div class="image">
+                        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="detail-box">
+                    <div class="template">
+                            <div class="headings">
+                                <h1 style="font-family: sans-serif;font-weight: 400;font-size: 130%;">PORTFOLIO</h1>
+                            </div>
+                            <div class="headings ">
+                                <h4 style="font-family: sans-serif;font-weight: 10;color: grey;">Template by W3.css</h4>
+                            </div>
+                            <div class="headings three">
+                                <i class="fa-solid fa-table-cells-large" style="color: green;"> PORTFOLIO</i>
+                            </div>
+                            <div class="headings three">
+                                <a href=""><i class="fa-solid fa-user" style="color: black;"> ABOUT </i></a>
+                            </div>
+                            <div class="headings three">
+                                <a href=""><i class="fa-solid fa-envelope" style="color: black;"> CONTACT </i></a>
+                            </div>
+                            <div class="headings">
+                                <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-square-snapchat"></i> <i class="fa-brands fa-pinterest-p"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-R">
+            <div class="Port-R"><h1 style="font-family: sans-serif;letter-spacing: 2px;font-size: 35px;font-weight: 400;padding: 1%;"> My Portfolio</h1></div>
+            <div class="box-filter">
+                <div class="tabs" style="width: 16%;font-family: sans-serif;font-weight: 20;background-color:rgb(241, 245, 249); ;">Filter:</div>
+                <div class="tabs" style="width: 13%;font-family: sans-serif;font-weight: 20;color: white;background-color: black;">ALL</div>
+                <div class="tabs" style="width: 24%;background-color: white;"><i class="fa-regular fa-gem"></i> Design </div>
+                <div class="tabs" style="width: 24%;background-color: white;"><i class="fa-regular fa-image"></i> Photos </div>
+                <div class="tabs" style="width: 16%;background-color: white;"><i class="fa-solid fa-map-pin"></i> Art </div>  
+            </div>
+            <div class="HR"> <hr style="width: 95%;height: 20%;color: grey;background-color: rgb(160, 158, 158);font-weight: 10;"> </div>
+             <div class="card-box">
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards" id="c3">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/p1.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards" id="c4">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/p2.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards" id="c5">
+                    <div class="img-card">
+                        <img src="https://www.w3schools.com/w3images/p3.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="content-card">
+                        <div class="heading">
+                            <p style="font-family: sans-serif;letter-spacing: 2%;margin-left: 4%;">Lorem Ipsum</p>
+                        </div>
+                        <div class="para">
+                            <p style="letter-spacing: 2%;line-height: 130%;font-family: sans-serif;margin-left: 4%;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="page-link">
+                <div class="page-no">
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-angles-left"></i></a>
+                    </div>
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-1"></i></a>
+                    </div>
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-2"></i></a>
+                    </div>
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-3"></i></a>
+                    </div>
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-4"></i></a>
+                    </div>
+                    <div class="link-box">
+                        <a href="" class="tab"><i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="second-page">
+        <div class="half-img-box">
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="img2">
+                <img src="https://www.w3schools.com/w3images/me2.jpg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+        <div class="content-page2">
+            <div class="abt-heading">
+                <h3 style="font-family: sans-serif;font-weight: 400;margin-left: 2%;letter-spacing: 1px;margin-top: 1%;">About Me</h3>
+            </div>
+            <div class="abt-content">
+                <p style="font-family: sans-serif;letter-spacing: 1px;line-height:20px;margin-left: 2%;margin-top: 1%;">Just me, myself and I,exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum ,porta lectus vitae, ulticies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

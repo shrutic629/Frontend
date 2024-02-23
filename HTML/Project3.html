@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 9vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .header1{
+            height: 100%;
+            width: 20%;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header2{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .header3{
+            height: 100%;
+            width: 20%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .second-B{
+            height: 91vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+        }
+        .second-box{
+            height: 91vh;
+            width: 95%;
+            /* border: 1px solid green; */
+            background-color: rgb(239, 239, 239);
+            display: flex;
+        }
+        .left{
+            height: 100%;
+            width: 40%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            height: 100%;
+            width: 60%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-inner{
+            height: 50%;
+            width: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .left-in{
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid red; */
+            font-family: sans-serif;
+        }
+        .but1{
+            height: 40%;
+            width: 40%;
+            /* border: 1px solid black; */
+        }
+        .but2{
+            height: 40%;
+            width: 40%;
+            /* border: 1px solid black; */
+        }
+        #buttn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .image-box{
+            height: 60%;
+            width: 90%;
+            /* border: 1px solid black; */
+        }
+        .content-box{
+            height: 25vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            height: 40%;
+            width: 90%;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+            line-height: 35px;
+            margin-top: 3%;
+
+        }
+        .designs{
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .six-designs{
+            height: 100%;
+            width: 89%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        .desi{
+            height: 46%;
+            width: 32%;
+            /* border: 1px solid black; */
+            background-color: rgb(237, 242, 244);
+        }
+        .img{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .description{
+            height: 20%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        .img-box{
+            height: 80%;
+            width: 70%;
+            /* border: 1px solid black; */
+        }
+        .des1{
+            height: 100%;
+            width: 70%;
+            /* border: 1px solid black; */
+            line-height: 30px;
+        }
+        .des2{
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        .butn{
+            height: 70%;
+            width: 80%;
+            text-decoration: none;
+        }
+        .about-us{
+            height: 75vh;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-content-box{
+            height: 80%;
+            width: 93%;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: rgb(237, 242, 244);
+        }
+        .left-box{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-box{
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-box1{
+            height: 75%;
+            width: 95%;
+            /* border: 1px solid black; */
+        }
+        .inner-box2{
+            height: 55%;
+            width: 89%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .inner-b1{
+            height: 22%;
+            width: 100%;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+        }
+        .inner-b2{
+            height: 50%;
+            width: 100%;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+            line-height: 23px;
+        }
+        .inner-b3{
+            height: 25%;
+            width: 100%;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+        }
+        .read{
+            height: 100%;
+            width: 34%;
+            /* border: 1px solid black; */
+        }
+        .latest-Blog{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1"><b>EDGECUT</b></div>
+        <div class="header2">
+            <li><a href="" style="text-decoration: none;color: black;font-family: sans-serif;">HOME</a></li>
+            <li><a href="" style="text-decoration: none;color: black;font-family: sans-serif;">ABOUT</a></li>
+            <li><a href="" style="text-decoration: none;color: black;font-family: sans-serif;">FURNITURES</a></li>
+            <li><a href="" style="text-decoration: none;color: black;font-family: sans-serif;">BLOG</a></li>
+            <li><a href="" style="text-decoration: none;color: black;font-family: sans-serif;">CONTACT US</a></li>
+        </div>
+        <div class="header3">
+            <button>LOGIN</button> <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <div class="second-B">
+        <div class="second-box">
+            <div class="left">
+                <div class="left-inner">
+                    <div class="left-in" style="font-size: 20px;"><h1><b>FOR ALL YOUR FURNITURE NEEDS</b></h1></div>
+                    <div class="left-in" style="font-size: 17px;line-height: 25px;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.</p></div>
+                    <div class="left-in" id="buttn">
+                        <div class="but1"><button style="height: 100%; width: 100%;font-size: 18px;background-color: rgb(238, 163, 25);border-style: none;">Contact us</button></div>
+                        <div class="but2"><button style="height: 100%; width: 100%;font-size: 18px;background-color: rgb(86, 182, 182);border-style: none;">About Us</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-box">
+                    <img src="P3-1.png" alt="" height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="content">
+            <h1>OUR FURNITURE</h1>
+            <P style="font-size: 17px;">which look dont even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an </P>
+        </div>
+    </div>
+    <div class="designs">
+        <div class="six-designs">
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture1.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">BROWN CHAIR DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>100.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture2.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">DOUBLE BED DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>200.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture3.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">HOUSE CHAIR DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>200.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture4.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">BROWN TABLE DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>100.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture5.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">BLUE CHAIR DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>200.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desi">
+                <div class="img">
+                    <div class="img-box">
+                        <img src="furniture6.png" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="des1">
+                        <h3 style="font-family: sans-serif;font-weight: 400;">BROWN TABLE DESIGN</h3><i class="fa-solid fa-dollar-sign" style="color: teal;"></i>200.00
+                    </div>
+                    <div class="des2">
+                        <div class="butn">
+                            <button style="color: teal;height: 100%;width: 100%;font-family: sans-serif;background-color: rgb(237, 242, 244);font-size: 14px;border: 1px solid rgb(237, 242, 244);">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us">
+        <div class="img-content-box">
+            <div class="left-box">
+                <div class="inner-box1">
+                    <img src="girl-img.png" alt="" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="inner-box2">
+                    <div class="inner-b1"><h1>ABOUT US</h1></div>
+                    <div class="inner-b2"><p style="font-size: 17px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.</p></div>
+                    <div class="inner-b3">
+                        <div class="read"><button style="height: 100%; width: 100%;background-color: rgb(86, 182, 182);color: white;font-size: 100%;">Read More</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest-Blog"></div>
+</body>
+</html>

@@ -7,17 +7,17 @@
 </head>
 <body>
     <script>
-        let input = prompt("enter the number: ")
-        let i=0;
-        while(i<=input)
-        {
-            if(i==input/2)
-            {
-                break;
-            }
-            console.log(i);
-            i++;
-        }
+        // let input = prompt("enter the number: ")
+        // let i=0;
+        // while(i<=input)
+        // {
+        //     if(i>input/2)
+        //     {
+        //         break;
+        //     }
+        //     console.log(i);
+        //     i++;
+        // }
 
         // sum of odd numbers
 
@@ -36,28 +36,28 @@
 
         // find strong number
 
-        // let num = 145; 
-        // let original_num=num;
-        // let sum=0;
-        // while(num>0){
-        //     let i=num%10;
-        //     let fact=1;
-        //     for(let j=i;j>=1;j--)
-        //     {
-        //         fact=fact*j
-        //     }
-        //     sum=sum+fact;
-        //     num=parseInt(num/10);
+        let num = 145; 
+        let original_num=num;
+        let sum=0;
+        while(num>0){
+            let i=num%10;
+            let fact=1;
+            for(let j=i;j>=1;j--)
+            {
+                fact=fact*j
+            }
+            sum=sum+fact;
+            num=parseInt(num/10);
             
-        // }
-        // console.log(sum)
-        // console.log(num)
-        // if(original_num==sum){
-        //     console.log("strong number")
-        // } 
-        // else{
-        //     console.log("not a strong number")
-        // }
+        }
+        console.log(sum)
+        console.log(num)
+        if(original_num==sum){
+            console.log("strong number")
+        } 
+        else{
+            console.log("not a strong number")
+        }
 
         
        

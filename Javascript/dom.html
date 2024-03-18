@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <button id="btn">Click</button> -->
+    <!-- <input type="text" placeholder="Enter your number 1" id="inp1">
+    <input type="text" placeholder="Enter your number 2" id="inp2">
+    <button id="btn">Click</button> -->
+    <!-- <h1 id="h"></h1> -->
+    
+    <input type="text" placeholder="Enter num1" id="inpt1">
+    <input type="text" placeholder="Enter num2" id="inpt2">
+    <button id="btn-s">Swap</button>
+    <script>
+        // document.getElementById("btn").onclick=function(){
+            // console.log("Hello");
+
+            // let a=10;
+            // let b=20;
+            // // console.log(a+b);
+
+            // alert(a+b);
+
+            // let a = Number(document.getElementById("inp1").value);
+            // let b = Number(document.getElementById("inp2").value);
+
+            // document.getElementById("h").innerText =  `Answer : ${a+b}`;
+
+        // }
+
+        document.getElementById("btn-s").onclick = function()
+        {
+            let c = Number(document.getElementById("inpt1").value);
+            let d = Number(document.getElementById("inpt2").value);
+
+           let temp;
+            temp=c;
+            c=d;
+            d=temp;
+
+           Number(document.getElementById("inpt1").value=c); 
+            Number(document.getElementById("inpt2").value=d);
+
+        
+
+        }
+    </script>
+</body>
+</html>

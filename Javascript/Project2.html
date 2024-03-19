@@ -26,7 +26,7 @@
             border-radius: 10px;
         }
         .inner-box{ 
-            border: 1px solid black;
+            /* border: 1px solid black; */
             padding: 10px 0px;
             margin: 0px 5px;
         }
@@ -35,31 +35,33 @@
             font-size: 0.9rem;
         }
         .box-1{
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         .box-2{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin-top: 10px;
             margin-bottom: 10px;
             width: 60%;
             /* padding: 20px 20px; */
         }
         .box-3{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 40%;
             display: flex;
             margin-top: 10px;
             margin-bottom: 10px;
         }
         .box-4{
-            border: 1px solid red;
-            display: flex;
+            /* border: 1px solid red; */
             width: 49%;
+        }
+        .box-4 a{
             display: flex;
             justify-content: space-between;
+            text-decoration: none;
         }
         .box3-1{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             padding: 5px 9px;
         }
         .red{
@@ -108,9 +110,15 @@
             color: white;
             letter-spacing: 1px;
         }
-        .box-2 select option{
+        option{
             font-size: 20rem;
-            padding: 20px 20px;
+            /* padding: 20px 20px; */
+        }
+        h5{
+            font-family: sans-serif;
+            font-weight: 200;
+            font-size: 0.7rem;
+            line-height: 25px;
         }
         
     </style>
@@ -124,10 +132,10 @@
             <div class="box-2">
                 <select name="" id="inp-btn">
                     <option value="">--Make a choice--</option>
-                    <option value="">React</option>
-                    <option value="">Django</option>
-                    <option value="">Angular</option>
-                    <option value="">AWS</option>
+                    <option value="R">React</option>
+                    <option value="D">Django</option>
+                    <option value="A">Angular</option>
+                    <option value="AW">AWS</option>
                 </select>
             </div>
             <div class="box-3">
@@ -157,17 +165,37 @@
                     </a>
                 </div>
             </div>
+            <h5 id="h"></h5>
             <div class="box-4">
-                <div class="box4-G">Upper</div>
-                <div class="box4-G">Lower</div>
-                <div class="box4-G1">+</div>
-                <div class="box4-G1">-</div>
+                <a href="">
+                    <div class="box4-G">Upper</div>
+                    <div class="box4-G">Lower</div>
+                    <div class="box4-G1">+</div>
+                    <div class="box4-G1">-</div>
+                </a>
             </div>
         </div>
     </div>
 
     <script>
+        document.getElementById("inp-btn").onchange = function()
+        {
+            let x = document.getElementById("inp-btn").value;
+            console.log(x);
 
+            if(x=='R'){
+                document.getElementById("h").innerText = "React operates by creating an in-memory virtual DOM rather than directly manipulating the browser's DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM. React is efficient, altering only what requires modification.";
+            }
+            else if(x=='D'){
+                document.getElementById("h").innerText = "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source."
+            }
+            else if(x=='A'){
+                document.getElementById("h").innerText = "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components."
+            }
+            else if(x=='AW'){
+                document.getElementById("h").innerText = "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling."
+            }
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+        input{
+            padding: 20px 20px;
+            font-size: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter num1" id="inp1">
+    <input type="text" placeholder="Enter num2" id="inp2">
+    <select name="" id="sel">
+        <option value="">none</option>
+        <option value="+">plus</option>
+        <option value="-">minus</option>
+        <option value="/">divide</option>
+        <option value="*">multiply</option>
+    </select>
+    <h1 id="h"></h1>
+
+    <script>
+        document.getElementById("sel").onchange = function()
+        {
+            let x= document.getElementById("sel").value;
+            // console.log(x);
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            if(x=="+")
+            {
+                console.log(a+b);
+                // document.getElementById("h").innerText = Answer a+b;
+                document.getElementById("h").innerText = `Answer: ${a+b}`;
+
+            }
+            else if(x=="-")
+            {
+                console.log(a-b);
+                document.getElementById("h").innerText = `Answer: ${a-b}`;
+            }
+            else if(x=="/")
+            {
+                console.log(a/b);
+                document.getElementById("h").innerText = `Answer: ${a/b}`;
+            }
+            else if(x=="*")
+            {
+                console.log(a*b);
+                document.getElementById("h").innerText = `Answer: ${a*b}`;
+            }
+        }
+    </script>
+
+</body>
+</html>

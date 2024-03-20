@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .main-cont {
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+            padding-top: 25vh;
+        }
+
+        .cal {
+            margin: auto;
+            /* height: 80vh; */
+            width: 30%;
+            /* border: 2px solid black; */
+        }
+
+        .inp1 {
+            width: 70.2%;
+            padding: 3vh;
+             background-color: white;
+            border: 2px solid black;
+            font-size: 5vh;
+            color: black;
+            text-align: right;
+        }
+
+        .num {
+            /* padding-left: 2vh; */
+            /* padding: 3vh; */
+            /* margin: auto; */
+            /* height: 60vh; */
+            width: 80%;
+
+            border: 2px solid;
+        }
+
+
+        .but {
+            height: 10vh;
+            padding: 1vh;
+            width: 24%;
+            border: 2px solid;
+            border-radius: 50%;
+            font-size: 3vh;
+            background-color: white;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-cont">
+        <div class="cal">
+           <input type=" color" class="inp1" name="" id="">
+            <div class="num">
+                <button class="but" value="AC">AC</button>
+                <button class="but" value="DEL">DEL</button>
+                <button class="but" value="%">%</button>
+                <button class="but" value="/">/</button>
+                <button class="but" value="7">7</button>
+                <button class="but" value="8">8</button>
+                <button class="but" value="9">9</button>
+                <button class="but" value="*"> * </button>
+                <button class="but" value="4">4</button>
+                <button class="but" value="5">5</button>
+                <button class="but" value="6">6</button>
+                <button class="but" value="-"> - </button>
+                <button class="but" value="1">1</button>
+                <button class="but" value="2">2</button>
+                <button class="but" value="3">3</button>
+                <button class="but" value="+"> + </button>
+                <button class="but" value="0">0</button>
+                <button class="but" value="00">00</button>
+                <button class="but" value="."> . </button>
+                <button class="but" value="="> = </button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script>
+        let bun= document.querySelectorAll(".but");
+        for(let i of bun)
+        {
+            i.onclick = function(){
+                if(i.innerText == "="){
+                    let a = document.querySelector(".inp1").value;
+                    console.log(eval(a));
+                    document.querySelector(".inp1").value = eval(a);
+                }
+                else if(i.innerText== "AC"){
+                    document.querySelector(".inp1").value = " ";
+                }
+                else if(i.innerText== "DEL")
+                {
+                    let a = document.querySelector(".inp1").value;
+                    document.querySelector(".inp1").value = a.slice(0,-1);
+                }
+                
+                else{
+                    document.querySelector(".inp1").value += i.innerText;
+                }
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>

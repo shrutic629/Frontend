@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-5</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 40%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+        #inp{
+            height: 100%;
+            width: 100%;
+            padding: 20px 0px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="inp">
+    </div>
+
+    <h1 id="h"></h1>
+
+    <script>
+            document.getElementById("inp").oninput = function()
+            {
+                let a = document.getElementById("inp").value;
+                console.log(a);
+
+                document.getElementById("h").innerText = a;
+            }
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-4</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 20px;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            width: 80%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .upper-box{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        input{
+            padding: 16px 90px;
+            border: 1px solid black;
+            font-size: 1rem;
+        }
+        #inp2{
+            margin: 0px 15px;
+        }
+        button{
+            padding: 16px 25px;
+            font-size: 1rem;
+        }
+        .lower-box{
+            /* border: 1px solid red; */
+            width: 92%;
+            margin-top: 70px;
+            padding: 20px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-box{
+            border: 1px solid black;
+            width: 24%;
+            padding: 90px 20px;
+            margin: 5px;
+            color: white;
+        }
+
+        /* .lower-box .inner-box:nth-child(4) {
+            background-color: green;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="upper-box">
+                <input type="text" placeholder="Enter Your Colour Name" id="inp1">
+                <input type="text" placeholder="Select Your Div" id="inp2">
+                <button id="butn">Submit</button>
+            </div>
+
+            <div class="lower-box">
+                <div class="inner-box" value="1"></div>
+                <div class="inner-box" value="2"></div>
+                <div class="inner-box" value="3"></div>
+                <div class="inner-box" value="4"></div>
+                <div class="inner-box" value="5"></div>
+                <div class="inner-box" value="6"></div>
+                <div class="inner-box" value="7"></div>
+                <div class="inner-box" value="8"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("butn").onclick = function()
+        {
+            let color = document.getElementById("inp1").value;
+            let boxNumber = document.getElementById("inp2").value;
+
+            let boxes = document.querySelectorAll(".inner-box");
+            for(let i in boxes)
+            {
+                boxes[i].style = `background-color: transparent`;
+                // console.log(i);
+            }
+            boxes[boxNumber-1].style = `background-color: ${color}`;
+
+        }
+    </script>
+</body>
+</html>

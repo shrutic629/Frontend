@@ -141,27 +141,27 @@
             <div class="box-3">
                 <div class="box3-1">
                     <a href="">
-                        <div class="red"></div>
+                        <div class="red" value="R"></div>
                     </a>
                 </div>
                 <div class="box3-1">
                     <a href="">
-                        <div class="yellow"></div>
+                        <div class="yellow" value="Y"></div>
                     </a>
                 </div>
                 <div class="box3-1">
                     <a href="">
-                        <div class="green"></div>
+                        <div class="green" value="G"></div>
                     </a>
                 </div>
                 <div class="box3-1">
                     <a href="">
-                        <div class="blue"></div>
+                        <div class="blue" value="B"></div>
                     </a>
                 </div>
                 <div class="box3-1">
                     <a href="">
-                        <div class="black"></div>
+                        <div class="black" value="BK"></div>
                     </a>
                 </div>
             </div>
@@ -197,9 +197,32 @@
             }
         }
 
-        document.getElementsByClassName("red").onclick = function(){
-            document.body.style.backgroundColor = "getColor";
+        document.getElementsByClassName("box3-1").onclick = function()
+        {
+            let x = document.querySelectorAll(".box3-1").value;
+            if(x=='R')
+            {
+                
+            }
+            else if(x=='Y')
+            {
+                
+            }
+            else if(x=='G')
+            {
+                
+            }
+            else if(x=='B')
+            {
+                
+            }
+            else if(x=='BK')
+            {
+                
+            }
         }
+
+        
     </script>
 </body>
 </html>

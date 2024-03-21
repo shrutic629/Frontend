@@ -26,7 +26,7 @@
              background-color: white;
             border: 2px solid black;
             font-size: 5vh;
-            color: white;
+            color: black;
             text-align: right;
         }
 
@@ -99,11 +99,12 @@
                 else if(i.innerText== "AC"){
                     document.querySelector(".inp1").value = " ";
                 }
-                // else if(i.innerText =="DEL")
-                // {
-                //     let length = document.querySelector(".inp1").value;
-                //     document.querySelector(".inp1").value = length.slice(0,-1);
-                // }
+                else if(i.innerText== "DEL")
+                {
+                    let a = document.querySelector(".inp1").value;
+                    document.querySelector(".inp1").value = a.slice(0,-1);
+                }
+                
                 else{
                     document.querySelector(".inp1").value += i.innerText;
                 }

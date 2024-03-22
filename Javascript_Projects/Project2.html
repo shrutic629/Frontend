@@ -1,228 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project2</title>
+    <title>Assignment 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        html{
-            font-size: 20px;
-        }
-        body{
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
             background-color: black;
-            display: flex;
-            justify-content: center;
+            /* color:white; */
         }
-        .box{
-            width: 35%;
-            padding: 20px 20px;
-            background-color: white;
-            margin-top: 60px;
+
+        .main {
+            width: 50%;
+            height: 80vh;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            background-color: aliceblue;
             border-radius: 10px;
         }
-        .inner-box{ 
-            /* border: 1px solid black; */
-            padding: 10px 0px;
-            margin: 0px 5px;
+
+        .card {
+            width: 90%;
+            margin: auto;
+
         }
-        p{
-            font-family: sans-serif;
-            font-size: 0.9rem;
+
+        #Domain {
+            padding: 7px 60px;
         }
-        .box-1{
-            /* border: 1px solid black; */
-        }
-        .box-2{
-            /* border: 1px solid black; */
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: 60%;
-            /* padding: 20px 20px; */
-        }
-        .box-3{
-            /* border: 1px solid black; */
-            width: 40%;
-            display: flex;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .box-4{
-            /* border: 1px solid red; */
-            width: 49%;
-        }
-        .box-4 a{
-            display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-        }
-        .box3-1{
-            /* border: 1px solid black; */
-            padding: 5px 9px;
-        }
-        .red{
-            /* border: 1px solid red; */
-            padding: 9px;
-            background-color: red;
-            border-radius: 50%;
-        }
-        .yellow{
-            padding: 9px;
-            background-color: yellow;
-            border-radius: 50%;
-        }
-        .green{
-            padding: 9px;
+        .grn{
             background-color: green;
-            border-radius: 50%;
-        }
-        .blue{
-            padding: 9px;
-            background-color: blue;
-            border-radius: 50%;
-        }
-        .black{
-            padding: 9px;
-            background-color: black;
-            border-radius: 50%;
-        }
-        .box4-G{
-            /* border: 1px solid blue; */
-            padding: 9px 10px;
-            background-color: green;
-            border-radius: 5px;
-            font-family: sans-serif;
-            font-size: 0.5rem;
             color: white;
-            letter-spacing: 1px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
         }
-        .box4-G1{
-            /* border: 1px solid blue; */
-            padding: 9px 21px;
-            background-color: green;
-            border-radius: 5px;
-            font-family: sans-serif;
-            font-size: 0.5rem;
-            color: white;
-            letter-spacing: 1px;
-        }
-        option{
-            font-size: 20rem;
-            /* padding: 20px 20px; */
-        }
-        h5{
-            font-family: sans-serif;
-            font-weight: 200;
-            font-size: 0.7rem;
-            line-height: 25px;
-        }
-        
     </style>
 </head>
+
 <body>
-    <div class="box">
-        <div class="inner-box">
-            <div class="box-1">
-                <p>Select Your Domain: </p>
+    <div class="main">
+        <div class="card">
+            <h1><label for="Domain">Select Your Domain</label> </h1>
+            <select name="" id="Domain">
+                <option value="React">React</option>
+                <option value="Angular">Angular</option>
+                <option value="Typescript">Typescript</option>
+                <option value="Vue.JS">Vue.Js</option>
+                <option value="vite.Js">Vite.Js</option>
+            </select>
+            <div class="colour">
+                <input type="text" id="red"
+                    style="background-color: red; border-radius: 80%; width: 2%; border: none;cursor: pointer; margin-top:2vh;padding: 5px;">
+                <input type="text" id="yellow"
+                    style="background-color: yellow; border-radius: 80%; width: 2%; border: none;cursor: pointer; margin-top:2vh;padding: 5px;">
+                <input type="text" id="green"
+                    style="background-color: green; border-radius: 80%; width: 2%; border: none;cursor: pointer; margin-top:2vh;padding: 5px;">
+                <input type="text" id="blue"
+                    style="background-color: blue; border-radius: 80%; width: 2%; border: none;cursor: pointer; margin-top:2vh; padding: 5px;">
+                <input type="text" id="black"
+                    style="background-color: cadetblue; border-radius: 80%; width: 2%; border: none;cursor: pointer; margin-top:2vh;padding: 5px;">
             </div>
-            <div class="box-2">
-                <select name="" id="inp-btn">
-                    <option value="">--Make a choice--</option>
-                    <option value="R">React</option>
-                    <option value="D">Django</option>
-                    <option value="A">Angular</option>
-                    <option value="AW">AWS</option>
-                </select>
-            </div>
-            <div class="box-3">
-                <div class="box3-1">
-                    <a href="">
-                        <div class="red" value="R"></div>
-                    </a>
-                </div>
-                <div class="box3-1">
-                    <a href="">
-                        <div class="yellow" value="Y"></div>
-                    </a>
-                </div>
-                <div class="box3-1">
-                    <a href="">
-                        <div class="green" value="G"></div>
-                    </a>
-                </div>
-                <div class="box3-1">
-                    <a href="">
-                        <div class="blue" value="B"></div>
-                    </a>
-                </div>
-                <div class="box3-1">
-                    <a href="">
-                        <div class="black" value="BK"></div>
-                    </a>
-                </div>
-            </div>
-            <h5 id="h"></h5>
-            <div class="box-4">
-                <a href="">
-                    <div class="box4-G">Upper</div>
-                    <div class="box4-G">Lower</div>
-                    <div class="box4-G1">+</div>
-                    <div class="box4-G1">-</div>
-                </a>
-            </div>
+            <p id="content"></p> <!-- Changed to a paragraph element -->
+          <div class="btns">
+             <button class="grn" id="upper">Upper Case</button>
+             <button class="grn" id="lower">Lower Case</button>
+             <button class="grn" id="+">+</button>
+             <button class="grn" id="-">-</button>
+          </div>
         </div>
     </div>
-
     <script>
-        document.getElementById("inp-btn").onchange = function()
-        {
-            let x = document.getElementById("inp-btn").value;
-            console.log(x);
+        document.addEventListener("DOMContentLoaded", function () {
 
-            if(x=='R'){
-                document.getElementById("h").innerText = "React operates by creating an in-memory virtual DOM rather than directly manipulating the browser's DOM. It performs necessary manipulations within this virtual representation before applying changes to the actual browser DOM. React is efficient, altering only what requires modification.";
-            }
-            else if(x=='D'){
-                document.getElementById("h").innerText = "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source."
-            }
-            else if(x=='A'){
-                document.getElementById("h").innerText = "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components."
-            }
-            else if(x=='AW'){
-                document.getElementById("h").innerText = "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling."
-            }
-        }
+            let dropdown = document.getElementById('Domain');
+            let content = document.getElementById('content');
 
-        document.getElementsByClassName("box3-1").onclick = function()
-        {
-            let x = document.querySelectorAll(".box3-1").value;
-            if(x=='R')
-            {
-                
-            }
-            else if(x=='Y')
-            {
-                
-            }
-            else if(x=='G')
-            {
-                
-            }
-            else if(x=='B')
-            {
-                
-            }
-            else if(x=='BK')
-            {
-                
-            }
-        }
-
+            dropdown.addEventListener('change', function () {
+                let selectedOption = dropdown.value;
+                if (selectedOption === 'React') {
+                    content.textContent = 'React (or React.js) is a free and open-source JavaScript library for building user interfaces. It allows you to create reusable components, like building blocks, to structure your webpages. Developed and maintained by Meta (formerly Facebook) and a large community, React offers a powerful approach to web development. At its core, React uses components, written with a combination of HTML-like JSX syntax and JavaScript, to define how different parts of your interface should look and behave. These components receive data through props and manage their internal state, which triggers re-renders when it changes.';
+                } if (selectedOption === 'Angular') {
+                    content.textContent = 'Angular, a powerful open-source framework from Google, empowers developers to create dynamic single-page web applications (SPAs). Imagine interactive web experiences that feel like native desktop applications - thats the magic of Angular.Built on TypeScript, a superset of JavaScript, Angular enforces type safety, catching errors early in the development process and leading to more robust code.The core of Angular revolves around components, reusable building blocks that encapsulate UI and functionality. These components leverage a declarative approach, where you describe what you want to display, and Angular takes care of the details.'
+                } if (selectedOption === 'Typescript') {
+                    content.textContent = 'Angular, a powerful open-source framework from Google, empowers developers to create dynamic single-page web applications (SPAs). Imagine interactive web experiences that feel like native desktop applications - thats the magic of Angular.Built on TypeScript, a superset of JavaScript that adds optional static typing, Angular enforces type safety. This catches errors early in the development process, leading to more robust and maintainable code. TypeScript provides clear definitions for variables and functions, making your code easier to understand for yourself and your teammates.The core of Angular revolves around components, reusable building blocks that encapsulate UI and functionality. These components leverage a declarative approach, where you describe what you want to display, and Angular takes care of the details.'
+                } if (selectedOption === 'Vue.JS') {
+                    content.textContent = 'Vue.js (pronounced "view") carves a niche as a progressive JavaScript framework for crafting user interfaces. It emphasizes simplicity and flexibility, making it a popular choice for projects of all sizes.At its core, Vue.js offers a data-driven approach. You define your UI using HTML templates, enhanced with special syntax to bind data. This creates a reactive system where changes in the data automatically update the DOM (Document Object Model), keeping your UI and data in sync.Vue.js shines in its progressive nature. You can use it as a small library to enhance existing HTML pages or scale it up for building complex single-page applications (SPAs). This versatility caters to developers with varying levels of experience and project needs.'
+                } if (selectedOption === 'vite.Js') {
+                    content.textContent = 'Vite.js stands out as a next-generation frontend build tool designed to significantly enhance the development experience for modern web applications. Heres a breakdown of its key features in under 40 linesLightning Speed: Vite prioritizes speed. It ditches traditional bundling and serves your source files directly, leveraging native ES modules. This translates to near-instantaneous server startup and blazing-fast Hot Module Replacement (HMR), keeping you in the development flow.Development Focus: Unlike some bundlers, Vite caters specifically to the development experience. It pre-bundles dependencies only once, using the super-fast esbuild tool, minimizing development server startup times. Source code, on the other hand, is served on-demand, ensuring changes reflect instantly in the browser.'
+                }
+            });
+        });
+        document.getElementById("red").addEventListener("click", function () {
+            document.body.style.backgroundColor = "red";
+        });
+        document.getElementById("yellow").addEventListener("click", function () {
+            document.body.style.backgroundColor = "yellow";
+        });
+        document.getElementById("green").addEventListener("click", function () {
+            document.body.style.backgroundColor = "green";
+        });
+        document.getElementById("blue").addEventListener("click", function () {
+            document.body.style.backgroundColor = "blue";
+        });
+        document.getElementById("black").addEventListener("click", function () {
+            document.body.style.backgroundColor = "cadetblue";
+        });
+        document.getElementById("upper").addEventListener("click",function(){
+            document.getElementById("content").style.textTransform = "uppercase";
+        });
+        document.getElementById("lower").addEventListener("click",function(){
+            document.getElementById("content").style.textTransform = "lowercase";
+        });
         
-    </script>
+        //  increasing font size
+        let head = document.getElementById("content");
+        let i =0;
+        let myArray = ['17px','18px','20px','22px','24px','26px']
+        function increasefontsize(){
+            head.style.fontSize = myArray[i++];
+        }
+        let mybtn = document.getElementById("+");
+        mybtn.addEventListener("click",increasefontsize)
+        // decreasing the size
+        let fom = document.getElementById("content");
+        let j =0;
+        let myArr = ['26px','24px','22px','20px','18px','17px']
+        function Decreasefontsize(){
+            fom.style.fontSize = myArr[j++];
+        }
+        let mybt = document.getElementById("-");
+        mybt.addEventListener("click",Decreasefontsize)
+   </script>
 </body>
+
 </html>

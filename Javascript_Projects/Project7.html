@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-7</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid black;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            padding: 15px 0px;
+            width: 25%;
+            border: 1px solid black;
+            /* font size: 20px; */
+            font-size: 20px;
+            margin: 10px;
+        }
+        .box{
+            border: 1px solid black;
+            /* padding: 40px 0px; */
+            width: 78%;
+            margin-left: 11%;
+            height: 30vh;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="font color" id="inp1">
+        <input type="text" placeholder="background color" id="inp2">
+        <input type="text" placeholder="font size" id="inp3">
+    </div>
+    <div class="box">
+        <h1 id="h">My name is Shruti</h1>
+    </div>
+
+    <script>
+        document.getElementById("inp1").oninput = function()
+        {
+            let a = document.getElementById("inp1").value;
+            // console.log(a);
+
+            document.getElementById("h").style.color =  a; 
+        }
+        document.getElementById("inp2").oninput = function()
+        {
+            let b = document.getElementById("inp2").value;
+            // console.log(b);
+
+            document.getElementById("h").style.backgroundColor =  b; 
+        }
+        document.getElementById("inp3").oninput = function()
+        {
+            let c = document.getElementById("inp3").value;
+            // console.log(b);
+
+            document.getElementById("h").style.fontSize =  c; 
+        }
+    </script>
+</body>
+</html>

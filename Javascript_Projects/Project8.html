@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        input{
+            padding: 10px 50px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        button{
+            padding: 10px 20px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="btn">Click</button>
+
+    <script>
+        document.getElementById("btn").onclick = function()
+        {
+           let x = document.getElementById("inp").value;
+           let h = document.createElement("h1");
+            h.innerText = x;
+            document.body.appendChild(h);
+            document.getElementById("inp").value = " ";
+            document.getElementById("inp").focus();
+        }
+    </script>
+</body>
+</html>

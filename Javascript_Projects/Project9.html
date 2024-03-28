@@ -55,27 +55,65 @@
     <div class="container">
         <div class="box1">
             <h2>Image :</h2>
-            <input type="text">
+            <input type="" placeholder="Enter Image Link" id="img">
             <h2>Name :</h2>
-            <input type="text">
+            <input type="text" placeholder="Enter Your Name" id="name">
             <h2>Email :</h2>
-            <input type="text">
+            <input type="text" placeholder="Enter your Email" id="email">
             <h2>Course :</h2>
-            <input type="text">
+            <input type="text" placeholder="Enter your course" id="course">
             <h2>Mobile :</h2>
-            <input type="text">
+            <input type="text" placeholder="Enter your Mobile" id="mob">
         </div>
         <div class="box2">
-            <div class="box-R1"></div>
+            <div class="box-R1">
+                <img src="" alt="" height="100%" width="100%" id="imag">
+            </div>
             <div class="box-R2">
                 <ul>
-                    <li>Name : </li>
-                    <li>Email : </li>
-                    <li>Course : </li>
-                    <li>Mobile No : </li>
+                    <li id="n">Name : </li>
+                    <li id="E">Email : </li>
+                    <li id="C">Course : </li>
+                    <li id="M">Mobile No : </li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("img").oninput = function()
+        {
+            let a = document.getElementById("img").value;
+            // document.getElementsByClassName("box-R1").innerText = a;
+            document.getElementById("imag") = a;
+
+        }
+        document.getElementById("name").oninput = function()
+        {
+            let b = document.getElementById("name").value;
+            // console.log(b);
+            document.getElementById("n").innerText = `Name : ${b}`;
+
+        }
+        document.getElementById("email").oninput = function()
+        {
+            let c = document.getElementById("email").value;
+            document.getElementById("E").innerText = `Email : ${c}`;
+
+        }
+        document.getElementById("course").oninput = function()
+        {
+            let d = document.getElementById("course").value;
+            document.getElementById("C").innerText = `Course : ${d}`;
+
+        }
+        document.getElementById("mob").oninput = function()
+        {
+            let e = document.getElementById("mob").value;
+            document.getElementById("M").innerText = `Mobile No : ${e}`;
+
+        }
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 1px solid black;
+            height: 70vh;
+            width: 70%;
+            margin-left: 10%;
+            margin-top: 6%;
+            display: flex;
+        }
+        input{
+          height: 27px;
+          width: 75%;
+          margin-left: 10px;
+          margin-top: 5px;
+         
+        }
+        ::placeholder{
+            padding-left: 7px;
+        }
+        h3{
+            margin-left: 2px;
+            font-family: sans-serif;
+            font-weight: 170;
+        }
+        .box1{
+            margin-top: 20px;
+            margin-left: 40px;
+            /* border: 1px solid red; */
+            width: 40%;
+        }
+        .box2{
+            margin-top: 60px;
+          margin-right: 8px;
+            border: 1px solid black;
+            width: 55%;
+            height: 65%;
+            background-color : grey;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .cricle{
+            border: 1px solid black;
+            height: 70%;
+            width: 38%;
+            border-radius: 50%;
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+   
+</head>
+<body>
+   
+      <div class="container">  
+     <div class="box1">
+        <h3> Image :</h3>
+        <input type="text" placeholder="Enter Image Link" id="inp1"> <br><br>
+       <h3> Name :</h3>
+        <input type="text" placeholder="Enter Your Name" id="inp2"> <br><br>
+       <h3> Email :</h3>
+        <input type="text" placeholder="Enter Your Email" id="inp3"> <br><br>
+       <h3> Course :</h3>
+        <input type="text" placeholder="Enter Your Course" id="inp4"> <br><br>
+       <h3> Moblie :</h3>
+        <input type="text" placeholder="Enter Your Moblie" id="inp5"> <br><br>
+     </div>
+
+     <div class="box2">
+        <div class="cricle">
+            <img id ="img" alt="" height="100%" width="100%" style="border-radius: 50%;">
+        </div>
+        <div class="list">
+            <ul>
+                <li>Name : <span id="name"></span> </li>
+                <li>Email : <span id="mail"></span> </li>
+                <li>Course : <span id="course"></span></li>
+                <li>Moblie No : <span id="moblie"></span></li>
+            </ul>
+        </div>
+     </div>
+
+      </div>
+
+
+      <script>
+         let i = document.querySelector("#inp1");
+         i.onkeyup = function(){
+            document.querySelector("#img").src= i.value;
+         }
+
+         let a = document.querySelector("#inp2");
+         a.onkeyup = function(){
+            document.querySelector("#name").innerText = a.value;
+         }
+         let b = document.querySelector("#inp3");
+         b.onkeyup = function(){
+            document.querySelector("#mail").innerText = b.value;
+         }
+         let c = document.querySelector("#inp4");
+         c.onkeyup = function(){
+            document.querySelector("#course").innerText = c.value;
+         }
+         let d = document.querySelector("#inp5");
+         d.onkeyup = function(){
+            document.querySelector("#moblie").innerText = d.value;
+         }
+
+      </script>
+       
+ 
+</body>
+</html>

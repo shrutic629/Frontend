@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 10px 40px;
+            border: 1px solid black;
+        }
+        button{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <button id="btn">Submit</button>
+    <button id="pp">Pop</button>
+    <button id="pn">Print_name</button>
+    <h1 id="h"></h1>
+
+    <script>
+
+        let x = [];
+        document.querySelector("#btn").onclick = function()
+        {
+            let a = document.querySelector("#inp1").value;
+            document.querySelector("#inp1").value = " ";
+            document.querySelector("#inp1").focus();
+            // console.log(a);
+
+            x.push(a);
+            console.log(x);
+        }
+
+        // document.querySelector("#pp").onclick = function()
+        // {
+        //     if(x.length>0){
+        //         x.pop();
+        //         console.log(x);
+        //     }
+        //     else{
+        //         alert("empty");
+        //     }
+            
+        // }
+
+        document.querySelector("#pn").onclick = function()
+        {
+            // document.querySelector("#h").innerHTML = x;
+            // let z = document.querySelector("#h").innerHTML;
+
+            //     console.log(z);
+                let i=0;
+              let z=  setInterval(function(){
+
+                if(x.length-1==i)
+                    {
+                        clearInterval(z);
+                    }
+                    document.querySelector("#h").innerText += x[i];
+                    i++;
+                    
+                },1000)
+                // if(i==x.length-1)
+                // {
+                //     clearInterval(z);
+                // }
+                
+                
+                
+            
+
+        }
+
+
+    </script>
+</body>
+</html>

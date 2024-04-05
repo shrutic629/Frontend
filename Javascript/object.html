@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <button id="btn">Submit</button>
+    <script>
+
+        let obj1 = [{
+            id: 1,
+            name: "Aman",
+            age: 12,
+            email: "aman@gmail.com",
+            city: "Jaipur"
+        },
+        {
+            id: 2,
+            name: "Shruti",
+            age: 28,
+            email: "shruti@gmail.com",
+            city: "Goa"
+        },
+        {
+            id: 3,
+            name: "Raj",
+            age: 30,
+            email: "raj@gmail.com",
+            city: "Goa"
+        },
+        {
+            id: 4,
+            name: "Nikita",
+            age: 20,
+            email: "nikita@gmail.com",
+            city: "Jaipur"
+        },
+        {
+            id: 5,
+            name: "vishan",
+            age: 16,
+            email: "vishan@gmail.com",
+            city: "Jodhpur"
+        },
+        {
+            id: 6,
+            name: "vishal",
+            age: 45,
+            email: "vishal@gmail.com",
+            city: "Jaipur"
+        },
+        {
+            id: 7,
+            name: "Keshav",
+            age: 10,
+            email: "keshav@gmail.com",
+            city: "Jaiselmer"
+        },
+        {
+            id: 8,
+            name: "harshit",
+            age: 55,
+            email: "harshit@gmail.com",
+            city: "Goa"
+        },
+        {
+            id: 9,
+            name: "priya",
+            age: 18,
+            email: "priya@gmail.com",
+            city: "gujrat"
+        },
+        {
+            id: 10,
+            name: "suman",
+            age: 30,
+            email: "suman@gmail.com",
+            city: "Goa"
+        }];
+            let x=obj1.map(function(item)
+            {
+                return item.age;
+            })
+            console.log(x);
+        // for(let i in obj1)
+        // {
+        //     console.log(obj1[i])
+        // }
+        // console.log(obj1[2].name)
+
+        // obj1.forEach((item)=>{
+        //     console.log(item);
+
+        // })
+
+            // document.querySelector("#btn").onclick = function()
+            // {
+            //     let a = document.querySelector("#inp1").value;
+
+            //     // let x = obj1.filter(function(item){
+            //     //     // console.log(item);
+            //     //     return item.age>a
+            //     // })
+
+            //     // console.log(x);
+
+            //     let x1 = obj1.map(function(item){
+            //         // console.log(item);
+            //         return item.age>a
+            //     })
+            //     console.log(x1);
+            // }
+
+
+    </script>
+</body>
+</html>

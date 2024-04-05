@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-fom</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+        }
+        .box-L{
+            width: 50%;
+            height: 60%;
+            border: 2px solid black;
+            /* display: flex; */
+        }
+        .box-R{
+            width: 50%;
+            border: 2px solid black;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-L">
+            <input type="text" placeholder="Sr_No">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Address">
+            <button>Submit</button>
+        </div>
+        <div class="box-R"></div>
+    </div>
+</body>
+</html>

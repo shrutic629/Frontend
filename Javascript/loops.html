@@ -59,6 +59,36 @@
         //     console.log("not a strong number")
         // }
 
+
+        let num = parseInt(prompt("Enter the number"));
+        let num1= num;
+        console.log("outside ", num1);
+
+        let rem=0;
+        let sum =0;
+        while(num1>0)
+        {
+            rem = num1%10;
+
+            let fact = 1;
+            for(let i=1; i<=rem; i++)
+            {
+                fact = fact*i;
+            }
+            sum  = sum+fact;
+            num1 = parseInt(num1/10);
+            
+        }
+        console.log(sum);
+        if(sum==num)
+        {
+            console.log("strong number");
+        }
+        else{
+            console.log("not a strong number");
+        }
+
+
         
        
 

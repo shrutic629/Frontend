@@ -34,23 +34,28 @@
             orders: [
               { orderId: "C789", amount: 100.5, status: "completed" },
               { orderId: "D012", amount: 75.2, status: "completed" },
+              
     
             ],
           },
         ];
 
-         let x = complexData.map(function(item)
-         {
-            return item.orders
-         }) 
+          let x = complexData.map(function(item)
+          {
+              let total_amount = item.orders.reduce((x,y)=>{
+                  
+                 return x.amount+y.amount;
+              })
 
-        let a = x.flat(1);
+              return{
 
-        let b = a.map(function(id)
-        {
-            return id.orderId
-        })
-        console.log(b);
+                  name : item.name,
+                  total:total_amount
+              }
+          })
+          console.log(x)
+   
+        
 
     </script>
 </body>

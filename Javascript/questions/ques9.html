@@ -39,19 +39,20 @@
           },
         ];
 
-         let x = complexData.map(function(item)
-         {
-            return item.orders
-         }) 
 
-        let a = x.flat(1);
+       let x = complexData.map((item)=>
+       
+          (item.orders.filter((a)=>
+             a.status=="pending",
+             console.log(this.status)
+          ))
+          // console.log(a)
+       )
+       console.log(x)
 
-        let b = a.map(function(id)
-        {
-            return id.orderId
-        })
-        console.log(b);
 
+       
+        
     </script>
 </body>
 </html>

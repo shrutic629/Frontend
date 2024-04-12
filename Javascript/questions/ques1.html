@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+        {
+            id: 1,
+            Name: "shruti",
+            email: "shruti@gmail.com",
+            age: 30,
+            city: "Maharashtra"
+        },
+        {
+            id: 2,
+            Name: "raj",
+            email: "raj@gmail.com",
+            age: 25,
+            city: "Goa"
+        },
+        {
+            id: 3,
+            Name: "pooja",
+            email: "pooja@gmail.com",
+            age: 39,
+            city: "Maharashtra"
+        },
+        {
+            id: 4,
+            Name: "suman",
+            email: "suman@gmail.com",
+            age: 12,
+            city: "Goa"    
+        },
+        {
+            id: 5,
+            Name: "nikita",
+            email: "nikita@gmail.com",
+            age: 10,
+            city: "Jaipur"  
+        }];
+
+        let x = arr.filter(function(find_age)
+        {
+            return (find_age.age)>18;
+        })
+        console.log(x);
+    </script>
+</body>
+</html>

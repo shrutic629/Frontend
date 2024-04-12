@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = [
+            {
+                name:"riya",
+                maths: 20,
+                hindi: 50,
+                science: 70
+            },
+            {
+                name:"siya",
+                maths: 80,
+                hindi: 76,
+                science: 90
+            },
+            {
+                name:"diya",
+                maths: 40,
+                hindi: 39,
+                science: 80
+            },
+            {
+                name:"harsh",
+                maths: 90,
+                hindi: 70,
+                science: 80
+            },
+            {
+                name:"priya",
+                maths: 90,
+                hindi: 95,
+                science: 86
+            }
+        ]
+
+        let x = student.filter(function(mks){
+            return parseInt((mks.maths+mks.hindi+mks.science)*100/300)>75
+        })
+        console.log(x);
+    </script>
+</body>
+</html>

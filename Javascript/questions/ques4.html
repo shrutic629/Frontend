@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = [
+            {
+                name:"shruti",
+                maths: 20,
+                hindi: 50,
+                science: 70
+            },
+            {
+                name:"siya",
+                maths: 80,
+                hindi: 76,
+                science: 90
+            },
+            {
+                name:"diya",
+                maths: 40,
+                hindi: 39,
+                science: 80
+            },
+            {
+                name:"harsh",
+                maths: 90,
+                hindi: 70,
+                science: 80
+            },
+            {
+                name:"hema",
+                maths: 90,
+                hindi: 95,
+                science: 86
+            }
+        ]
+
+        // let a = student.filter(function(item){
+        //     return (item.name[0]=='h');
+        // })
+        // console.log(a);
+
+            
+        let x = student.map(function(item){
+            for(let i in item.name)
+            {
+                return item.name[i]=='a'
+            }
+            
+        })
+        console.log(x);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .case-box{
+            display: flex;
+        }
+        .case{
+            border: 1px solid black;
+            padding: 15px 40px;
+            margin: 5px;
+            background-color: green;
+            color: white;
+        }
+        .box{
+            border: 1px solid black;
+            width: 50%;
+            background-color: white;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            margin-top: 10%;
+        }
+        h3{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1 id="h">Select your domain</h1>
+    <select name="" id="sel">
+        <option value="">None</option>
+        <option value="R">React</option>
+        <option value="J">Javascript</option>
+    </select>
+    <div>
+        <button class="change-color-btn" style="background-color: red;" id="red"></button>
+        <button class="change-color-btn" style="background-color: yellow;" id="yellow"></button>
+        <button class="change-color-btn" style="background-color: green;" id="green"></button>
+        <button class="change-color-btn" style="background-color: blue;" id="blue"></button>
+        <button class="change-color-btn" style="background-color: grey;" id="grey"></button>
+    </div>
+    <h3 id="text" style="font-size: 20px;"></h3>
+
+    <div class="case-box">
+        <div class="case" id="uc">Uppercase</div>
+        <div class="case" id="lc">Lowercase</div>
+        <div class="case" id="plus">+</div>
+        <div class="case" id="minus">-</div>
+    </div>
+</div>
+
+    <script>
+        document.querySelector("#sel").onchange = function()
+        {
+            let x = document.querySelector("#sel").value;
+
+            if(x=='R')
+            {
+                document.querySelector("#text").innerHTML = `React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.`
+            }
+            else if(x=='J')
+            {
+                document.querySelector("#text").innerHTML = `W3Schools maintains a complete JavaScript reference, including all HTML and browser objects. The reference contains examples for all properties, methods and ...`
+            }
+        }
+
+
+        // document.querySelector("#red").onclick = function()
+        // {
+        //     document.body.style.backgroundColor = `red`
+        // }
+
+        // document.querySelector("#yellow").onclick = function()
+        // {
+        //     document.body.style.backgroundColor = `yellow`
+        // }
+
+        // document.querySelector("#green").onclick = function()
+        // {
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        // document.querySelector("#blue").onclick = function()
+        // {
+        //     document.body.style.backgroundColor = `blue`
+        // }
+
+        // document.querySelector("#grey").onclick = function()
+        // {
+        //     document.body.style.backgroundColor = `grey`
+        // }
+
+        // console.log(document.querySelector("#grey"));
+
+        let colorButtons = document.querySelectorAll(".change-color-btn");
+        
+        colorButtons.forEach(function(item){
+            item.onclick = function(event) {
+                document.body.style.backgroundColor = event.target.id;
+            }
+        })
+        
+        
+        document.querySelector("#uc").onclick = function()
+        {
+            let x = document.querySelector("#text");
+            x.style.textTransform = `uppercase`
+        }
+
+        document.querySelector("#lc").onclick = function()
+        {
+            let z = document.querySelector("#text");
+            z.style.textTransform = `lowercase`
+        }
+
+        document.querySelector("#plus").onclick = function()
+        {
+            let s = document.querySelector("#text");
+            
+            // console.log(s.style.fontSize, "====>", s.style.fontSize + 1, "parse ====>", parseInt(s.style.fontSize));
+            let newFontSize = parseInt(s.style.fontSize) + 1;
+            s.style.fontSize = `${newFontSize}px`;
+        }
+
+        document.querySelector("#minus").onclick = function()
+        {
+            let r = document.querySelector("#text");
+            let newminus =  parseInt(r.style.fontSize) - 1
+            
+            r.style.fontSize = `${newminus}px`
+
+        }
+        
+
+
+
+    </script>
+</body>
+</html>

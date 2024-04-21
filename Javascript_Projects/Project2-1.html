@@ -109,6 +109,7 @@
         
         colorButtons.forEach(function(item){
             item.onclick = function(event) {
+                // console.log(event)
                 document.body.style.backgroundColor = event.target.id;
             }
         })
@@ -129,8 +130,7 @@
         document.querySelector("#plus").onclick = function()
         {
             let s = document.querySelector("#text");
-            
-            // console.log(s.style.fontSize, "====>", s.style.fontSize + 1, "parse ====>", parseInt(s.style.fontSize));
+
             let newFontSize = parseInt(s.style.fontSize) + 1;
             s.style.fontSize = `${newFontSize}px`;
         }

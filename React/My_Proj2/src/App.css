@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header{
+  height: 10vh;
+  background-color: blue;
+}
+.footer{
+  height: 20vh;
+  background-color: purple;
+}
+.section{
+  height: 50vh;
+  background-color: yellow;
+  display: flex;
+}
+
+.left_sec{
+  height: 100%;
+  width: 25%;
+  background-color: green;
+}
+.right_sec{
+  height: 100%;
+  width: 75%;
+  background-color: rgb(45, 169, 210);
+}

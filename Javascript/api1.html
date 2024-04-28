@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                    let json_data; 
+
+            // fetching data from api and make json globlly access
+
+            async function fetchData() {
+            let data = await fetch("https://dummyjson.com/products");
+            json_data = await data.json(); 
+            displayProducts(json_data.products);
+            }
+
+            //make a function who takes input and display productsppo
+
+            function displayProducts(products) {
+            
+            document.getElementById("products-container").innerHTML = "";
+
+            products.forEach((item) => {
+                let d = document.createElement("div");
+                let i = document.createElement("img");
+                let h2 = document.createElement("h2");
+                let h3 = document.createElement("h3");
+                i.src = item.images[0];
+                h2.innerText = "Name: " + item.title;
+                h3.innerText = "Price: " + item.price;
+                d.className = "box";
+                d.append(i);
+                d.append(h2);
+                d.append(h3);
+                document.getElementById("products-container").append(d);
+            });
+            }
+
+            //call the fetch data function who display all the products 
+            fetchData();
+
+            // now while searching show products 
+            document.getElementById("srch").addEventListener("keypress", function () {
+            let searchText = document.getElementById("srch").value.toLowerCase();
+            let searchedProducts = json_data.products.filter((product) =>
+                product.title.toLowerCase().includes(searchText)
+            );
+            displayProducts(searchedProducts);
+            });
+
+            // now if we have to clear searched products 
+            document.getElementById("clear").addEventListener("click", function () {
+
+            document.getElementById("products-container").innerHTML = "";
+            document.getElementById("srch").value="";
+            fetchData();
+            });
+    </script>
+</body>
+</html>

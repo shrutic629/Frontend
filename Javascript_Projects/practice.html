@@ -4,108 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .box1{
-            border: 1px solid black;
-            width: 25%;
-            /* padding: 20%; */
-            padding-left: 10px;
-        }
-        .box2{
-            border: 1px solid black;
-            width: 25%;
-            /* padding: 20%; */
-            display: flex;
-        }
-        input{
-            padding: 15px;
-            border: 1px solid black;
-        }
-        .L-box{
-            /* height: 20%; */
-            border: 1px solid red;
-            width: 50%;
-            padding: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .R-box{
-            border: 1px solid green;
-            width: 50%;
-            padding: 10%;
-        }
-        .LL{
-            height: 80%;
-            width: 80%;
-            border: 1px solid red;
-            /* padding: 20%; */
-            border-radius: 50%;
-        }
-        img{
-            height: 100%;
-            width: 100%;
-            /* padding: 100%; */
-            border: 1px solid green;
-             border-radius: 50%;
-        }
-        
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box1">
-            <h1>Image:</h1>
-            <input type="text" placeholder="Enter image link" id="img-link">
-            <h1>Name:</h1>
-            <input type="text" placeholder="Enter Name" id="name">
-            <h1>Email:</h1>
-            <input type="text" placeholder="Enter Email" id="email">
-            <h1>Course:</h1>
-            <input type="text" placeholder="Enter Course" id="course">
-            <h1>Mobile:</h1>
-            <input type="text" placeholder="Enter Mobile number" id="mob">
-        </div>
-        <div class="box2">
-            <div class="L-box">
-                <div class="LL">
-                    <img src="" alt="" id="image" >
-                </div>
-
-            </div>
-            <div class="R-box">
-                <ul>
-                    <li id="nm">Name: </li>
-                    <li id="em">Email: </li>
-                    <li id="cs">Course: </li>
-                    <li id="mn">Mobile.No: </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <script>
-        document.querySelector("#img-link").oninput = function()
-        {
-            let a = document.querySelector("#img-link").value
-            document.querySelector("#image").src = a
-        }
-        document.querySelector("#name").oninput = function()
-        {
-            let a = document.querySelector("#name").value
-            document.querySelector("#nm").innerText = `Name: ${a}`
-        }
+         let a = 10;
+        console.log(a);
+        let b = 20;
+        console.log(b);
+        let c = 30;
+        console.log(c);
 
+        setTimeout(function(){
+            for(let i=0; i<=100; i++)
+        {
+            console.log(i)
+        }
+        },10000)
+        
+
+        let d = 40;
+        console.log(d);
+        let f = 50;
+        console.log(f);
     </script>
 </body>
 </html>

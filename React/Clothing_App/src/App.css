@@ -1,0 +1,49 @@
+html{
+  font-size: 20px;
+}
+.header{
+  height: 12vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.head_L{
+  height: 100%;
+  width: 40%;
+  /* background-color: red; */
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.head_R{
+  height: 100%;
+  width: 60%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span{
+  color: red;
+  margin-left: 8px;
+}
+.R_innerbox{
+  /* border: 1px solid white; */
+  /* padding: 20px; */
+  height: 100%;
+  width: 60%;
+}
+ul li{
+  color: white;
+  list-style: none;
+  display: inline-block;
+  margin: 15px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}

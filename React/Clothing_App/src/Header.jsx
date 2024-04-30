@@ -1,12 +1,19 @@
-import Head_L from './Head_L';
-import Head_R from './Head_R';
 
 function Header()
 {
     return(
         <div className="header">
-            <Head_L/>
-            <Head_R/>
+        <div className="head_L">SIXTEEN <span>CLOTHING</span></div>
+        <div className="head_R">
+            <div className="R_innerbox">
+            <ul>
+            <li>Home</li>
+            <li>Our Products</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            </ul>
+        </div>
+        </div>
         </div>
     )
 }

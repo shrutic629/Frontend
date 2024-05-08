@@ -296,7 +296,16 @@ ul li{
   color: red;
 }
 .six_pro{
-  border: 5px solid red;
+  /* border: 1px solid red; */
   background-image: url("./image/products-heading.jpg");
-  padding: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 190px;
+}
+.back_inner1{
+  
+}
+.back_inner2{
+
 }

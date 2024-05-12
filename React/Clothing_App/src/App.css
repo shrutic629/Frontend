@@ -88,6 +88,7 @@ ul li{
 
 }
 .Latest_head{
+  border: 5px solid red;
   color: black;
   font-family: sans-serif;
   font-size: 1.4rem;
@@ -109,7 +110,7 @@ ul li{
   font-size: 0.6rem;
 }
 .second_box{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   margin: 50px 150px;
   
 }
@@ -301,11 +302,127 @@ ul li{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 190px;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .back_inner1{
-  
+  font-family: sans-serif;
+  color: red;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 .back_inner2{
-
+  font-family: sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+.option2{
+  border-bottom: 1px solid rgb(234, 231, 231);
+  margin: 0px 150px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option2 ul li{
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.67rem;
+  font-weight: 600;
+}
+.page_chge{
+  border-bottom: 1px solid rgb(232, 231, 231);
+  margin: 0px 150px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page_ch_inner_box{
+  /* border: 1px solid blue; */
+  width: 30%;
+  /* padding: 30px; */
+}
+.page_ch_inner_box button{
+  /* padding: 15px; */
+  margin: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: white;
+  border: 1px solid rgb(188, 185, 185);
+}
+.bt{
+  padding: 15px 20px;
+}
+.bt1{
+  padding: 15px 14px;
+}
+.our_company{
+  background-image: url("./image/about-heading.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our_backg{
+  /* border: 1px solid red; */
+  /* padding: 50px; */
+  margin: 0px 150px;;
+}
+.ourback_head{
+  border-bottom: 1px solid rgb(226, 223, 223);
+  padding-top: 90px;
+  padding-bottom: 15px;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.who_what_para{
+  /* border: 1px solid green; */
+  padding-top: 50px;
+  display: flex;
+}
+.our_back_img{
+  /* border: 2px solid red; */
+  padding: 175px;
+  width: 50%;
+  background-image: url("./image/feature-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our_back_para{
+  border: 2px solid blue;
+  /* padding: 50px; */
+  width: 50%;
+}
+.our_back_para_box{
+  border-bottom: 1px solid rgb(218, 215, 215);
+  font-family: sans-serif;
+  font-size: 0.74rem;
+}
+.our_back_logo_box{
+  border: 1px solid blueviolet;
+  padding: 40px;
+}
+.our_back_para_box h3{
+  color: #1a6692;
+  font-weight: 500;
+}
+.our_back_para_box p{
+  color: black;
+  letter-spacing: 1px;
 }

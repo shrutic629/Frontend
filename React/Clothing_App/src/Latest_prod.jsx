@@ -11,10 +11,11 @@ function Latest_prod()
 {
     return(
         <div className="second_box">
-            <div className="Latest_head">
-                    <h4 className="Late_P">Latest Products</h4>
-                    <h6 className="view">VIEW ALL PRODUCTS<FontAwesomeIcon icon={faAngleRight} /></h6>
-            </div>
+
+        {/* <div className="Latest_head">
+            <h4 className="Late_P">Latest Products</h4>
+            <h6 className="view">VIEW ALL PRODUCTS<FontAwesomeIcon icon={faAngleRight} /></h6>
+        </div> */}
 
             <div className="card_box">
                 <div className="card">

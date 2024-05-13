@@ -17,6 +17,13 @@ import Page_change from './Page_change'
 
 import Our_comp from './Our_comp'
 import Our_Background from './Our_Background'
+import Our_team_mbrs from './Our_team_mbrs'
+import Product_customer_global from './Product_customer_global'
+import Heading from './Heading'
+import Logo_box from './Logo_box'
+
+import Heading1 from './Heading1'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
@@ -38,9 +45,20 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Footer/> */}
 
     {/* Page 3 */}
-    <Header/>
+    {/* <Header/>
     <Our_comp/>
     <Our_Background/>
+    <Our_team_mbrs/>
+    <Product_customer_global/>
+    <Heading/>
+    <Logo_box/>
+    <Footer/> */}
+
+    {/* Page 4 */}
+    <Header/>
+    <Heading1/>
+    <Logo_box/>
     <Footer/>
+
   </React.StrictMode>,
 )

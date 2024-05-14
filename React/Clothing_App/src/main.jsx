@@ -23,6 +23,9 @@ import Heading from './Heading'
 import Logo_box from './Logo_box'
 
 import Heading1 from './Heading1'
+import Lets_get_in from './Lets_get_in'
+import Our_Location from './Our_Location'
+import Message_box from './Message_box'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -56,6 +59,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     {/* Page 4 */}
     <Header/>
+    <Lets_get_in/>
+    <Our_Location/>
+    <Message_box/>
     <Heading1/>
     <Logo_box/>
     <Footer/>

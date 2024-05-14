@@ -602,7 +602,177 @@ ul li{
   padding-top: 50px;
   padding-bottom: 100px;
 }
-logo_img img{
+.logo_img img{
   height: 100%;
   width: 100%;
+}
+.lets_get{
+  width: 100%;
+  padding: 180px;
+  /* background-color: red; */
+  /* border: 1px solid red; */
+  background-image: url("./image/contact-heading.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lets_get h4{
+  color: red;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.lets_get h1{
+  color: white;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+.our_locatn{
+  /* border: 1px solid red; */
+  /* padding: 50px; */
+  margin: 0px 150px;
+}
+.location_heading{
+  border-bottom: 1px solid rgb(239, 237, 237);
+  /* padding: 50px; */
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-top: 70px;
+  padding-bottom: 15px;
+}
+.map_cont_box{
+  /* border: 1px solid black; */
+  display: flex;
+  padding-top: 40px;
+}
+.map{
+  width: 65%;
+  /* border: 1px solid orange; */
+  /* padding: 50px; */
+}
+.map_cont{
+  width: 35%;
+  /* border: 1px solid purple; */
+  padding-left: 30px;
+  /* padding: 50px; */
+}
+.map img{
+  height: 100%;
+  width: 100%;
+}
+.map_content{
+ border-bottom: 1px solid rgb(239, 236, 236);
+ /* padding: 130px; */
+ padding-bottom: 25px;
+}
+.map_logo{
+  /* border: 1px solid blue; */
+  padding-top: 20px;
+}
+.map_content h5{
+  font-family: sans-serif;
+  color: #1a6692;
+}
+.map_content p{
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  font-weight: 100;
+  padding-top: 25px;
+  line-height: 25px;
+}
+.map_logo button{
+  padding: 25px;
+  margin-right: 10px;
+  border: none;
+}
+.message_main_box{
+  /* border: 1px solid red; */
+  margin: 0px 150px;
+  /* padding: 70px; */
+}
+.message_heading{
+  font-family: sans-serif;
+  border-bottom: 1px solid rgb(230, 227, 227);
+  padding-top: 85px;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.form_main_box{
+  /* border: 1px solid red; */
+  /* padding: 50px; */
+  display: flex;
+  padding-top: 50px;
+}
+.L_form{
+  width: 65%;
+  /* border: 1px solid blue; */
+  /* padding: 50px; */
+  display: flex;
+  flex-direction: column;
+}
+.R_form{
+  width: 35%;
+  /* border: 1px solid yellow; */
+  /* border-top: 1px solid rgb(236, 233, 233); */
+  /* border-bottom: 1px solid rgb(206, 204, 204); */
+  /* padding: 50px; */
+  margin-left: 40px;
+}
+.L_form input{
+  margin-bottom: 25px;
+  padding: 13px;
+  border: 1px solid rgb(224, 221, 221);
+  font-size: 0.8rem;
+  color: rgb(28, 28, 28);
+  font-weight: 200;
+}
+.L_form button{
+  background-color: red;
+  color: white;
+  width: 20%;
+  border: none;
+  font-size: 0.75rem;
+  padding: 12px;
+  border-radius: 5px;
+}
+#form_in{
+  padding-bottom:90px ;
+}
+.R_form1{
+  border-bottom: 1px solid rgb(229, 226, 226);
+  border-top: 1px solid rgb(229, 226, 226);
+}
+.R_form2{
+  color: #1a6692;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgb(229, 226, 226);
+  padding: 15px 0px;
+}
+.R_form1 h4{
+  color: red;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 25px 0px;
+}
+.R_form1 p{
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.75rem;
+  color: grey;
+  padding-bottom: 20px;
+  line-height: 25px;
 }

@@ -90,7 +90,7 @@ ul li{
 
 }
 .Latest_head{
-  border: 5px solid red;
+  /* border: 5px solid red; */
   color: black;
   font-family: sans-serif;
   font-size: 1.4rem;
@@ -112,7 +112,7 @@ ul li{
   font-size: 0.6rem;
 }
 .second_box{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 50px 150px;
   
 }

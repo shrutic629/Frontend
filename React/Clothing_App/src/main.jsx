@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+
+import App from './App.jsx'
+
 // import './index.css'
 import Header from './Header'
 import './App.css'
@@ -29,7 +31,7 @@ import Message_box from './Message_box'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
 
     {/* Page 1 */}
     {/* <Header/>
@@ -58,13 +60,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Footer/> */}
 
     {/* Page 4 */}
-    <Header/>
+    {/* <Header/>
     <Lets_get_in/>
     <Our_Location/>
     <Message_box/>
     <Heading1/>
     <Logo_box/>
-    <Footer/>
+    <Footer/> */}
 
   </React.StrictMode>,
 )

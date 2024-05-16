@@ -1,0 +1,25 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background-color: rgb(180, 178, 178);
+  padding: 20px;
+}
+button{
+  background-color: green;
+  color: black;
+}
+span{
+  font-size: 30px;
+}

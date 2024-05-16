@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 20px;
+  }
+  
+  .header{
+    height: 12vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+  }
+  .head_L{
+    height: 100%;
+    width: 40%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .head_R{
+    height: 100%;
+    width: 60%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lets_get{
+    width: 100%;
+    padding: 180px;
+    background-image: url("../image/contact-heading.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lets_get h4{
+    color: red;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  .lets_get h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 20px;
+  }
+  .our_locatn{
+    margin: 0px 150px;
+  }
+  .location_heading{
+    border-bottom: 1px solid rgb(239, 237, 237);
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding-top: 70px;
+    padding-bottom: 15px;
+  }
+  .map_cont_box{
+    display: flex;
+    padding-top: 40px;
+  }
+  .map{
+    width: 65%;
+  }
+  .map_cont{
+    width: 35%;
+    padding-left: 30px;
+  }
+  .map img{
+    height: 100%;
+    width: 100%;
+  }
+  .map_content{
+   border-bottom: 1px solid rgb(239, 236, 236);
+   padding-bottom: 25px;
+  }
+  .map_logo{
+    padding-top: 20px;
+  }
+  .map_content h5{
+    font-family: sans-serif;
+    color: #1a6692;
+  }
+  .map_content p{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 100;
+    padding-top: 25px;
+    line-height: 25px;
+  }
+  .map_logo button{
+    padding: 25px;
+    margin-right: 10px;
+    border: none;
+  }
+  .message_main_box{
+    margin: 0px 150px;
+  }
+  .message_heading{
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(230, 227, 227);
+    padding-top: 85px;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+  .form_main_box{
+    display: flex;
+    padding-top: 50px;
+  }
+  .L_form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+  }
+  .R_form{
+    width: 35%;
+    margin-left: 40px;
+  }
+  .L_form input{
+    margin-bottom: 25px;
+    padding: 13px;
+    border: 1px solid rgb(224, 221, 221);
+    font-size: 0.8rem;
+    color: rgb(28, 28, 28);
+    font-weight: 200;
+  }
+  .L_form button{
+    background-color: red;
+    color: white;
+    width: 20%;
+    border: none;
+    font-size: 0.75rem;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  #form_in{
+    padding-bottom:90px ;
+  }
+  .R_form1{
+    border-bottom: 1px solid rgb(229, 226, 226);
+    border-top: 1px solid rgb(229, 226, 226);
+  }
+  .R_form2{
+    color: #1a6692;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgb(229, 226, 226);
+    padding: 15px 0px;
+  }
+  .R_form1 h4{
+    color: red;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 25px 0px;
+  }
+  .R_form1 p{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.75rem;
+    color: grey;
+    padding-bottom: 20px;
+    line-height: 25px;
+  }
+  .heading{
+    border-bottom: 1px solid rgb(227, 225, 225);
+    margin: 0px 150px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+  }
+  .logo{
+    border-bottom: 1px solid rgb(228, 226, 226);
+    margin: 0px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo_img{
+    width: 18%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .logo_img img{
+    height: 100%;
+    width: 100%;
+  }
+  .footer{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 150px;
+    padding: 60px;
+  }
+  .footer span{
+    color: red;
+  }

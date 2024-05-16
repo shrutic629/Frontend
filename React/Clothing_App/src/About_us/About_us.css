@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+  }
+
+.header{
+    height: 12vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+  }
+  .head_L{
+    height: 100%;
+    width: 40%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .head_R{
+    height: 100%;
+    width: 60%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span{
+    color: red;
+    margin-left: 8px;
+  }
+  .R_innerbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+  }
+  ul li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+  }
+
+.our_company{
+    background-image: url("../image/about-heading.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our_backg{
+    margin: 0px 150px;;
+  }
+  .ourback_head{
+    border-bottom: 1px solid rgb(226, 223, 223);
+    padding-top: 90px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .who_what_para{
+    padding-top: 50px;
+    display: flex;
+  }
+  .our_back_img{
+    padding: 175px;
+    width: 50%;
+    background-image: url("../image/feature-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .our_back_para{
+    width: 50%;
+    padding-left: 30px;
+  }
+  .our_back_para_box{
+    border-bottom: 1px solid rgb(218, 215, 215);
+    font-family: sans-serif;
+    font-size: 0.74rem;
+    padding-bottom: 20px;
+  }
+  .our_back_logo_box{
+    padding-top: 20px;
+  }
+  .our_back_para_box h3{
+    color: #1a6692;
+    font-weight: 500;
+  }
+  .our_back_para_box p{
+    color: black;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 0.72rem;
+  }
+  .our_back_logo_box button{
+    padding: 22px;
+  }
+  .lg{
+    margin-left: 10px;
+  }
+
+  .our_team_box{
+    margin:   0px 150px;
+  }
+  .team_members{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .member_card{
+    border: 1px solid rgb(227, 225, 225);
+    width: 31.5%;
+    margin-bottom: 30px;
+  }
+  .top_img_card{
+    
+  }
+  .bottom_intro_card{
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top_img_card img{
+    height: 100%;
+    width: 100%;
+  }
+  .bottom_intro_card h4{
+    color: #1a6692;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .bottom_intro_card h6{
+    color: red;
+    font-weight: 500;
+    padding-top: 15px;
+  }
+  .bottom_intro_card p{
+    color: rgb(106, 105, 105);
+    font-size: 0.75rem;
+    font-weight: 100;
+    padding-top: 25px;
+    line-height: 25px;
+    padding-left: 20px;
+  }
+  .prod_cust_glob{
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+    background-image: url("../image/slide_02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prod_cus_glob_innerbox{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pro_cus_glo_card{
+    border: 2px solid white;
+    width: 31.5%;
+  }
+  .pcg_card_top{
+    width: 100%;
+    padding: 40px;
+    background-color: rgb(236, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pcg_card_bot{
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+  }
+  .red_logo{
+    border: 1px solid red;
+    padding: 50px 0px;
+    width: 40%;
+    background-color: red;
+  }
+  .pcg_card_bot h4{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a6692;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .pcg_card_bot p{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    color: gray;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 25px;
+  }
+  .pcg_card_bot button{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    margin-left: 85px;
+  }
+  .heading{
+    border-bottom: 1px solid rgb(227, 225, 225);
+    margin: 0px 150px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+  }
+  .heading h2{
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }

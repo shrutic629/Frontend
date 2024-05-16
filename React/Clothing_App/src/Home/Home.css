@@ -29,7 +29,7 @@
     font-size: 0.8rem;
   }
   .new_arr{
-    height: 84vh;
+    height: 95vh;
     width: 100%;
     background-color: red;
     background-image: url("https://i.postimg.cc/cJWT736n/slide-01.jpg");
@@ -152,16 +152,16 @@
     width: 100%;
   }
   .best_prods{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 40px;
     display: flex;
   }
   .best_L{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 50%;
   }
   .best_R{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 50%;
   }
   .Look{
@@ -183,14 +183,14 @@
     color: #007bff;
   }
   .unorder_L{
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .unorder_L ul{
     display: flex;
     flex-direction: column;
   }
   .unorder_L ul li{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: grey;
   }
   .btn{

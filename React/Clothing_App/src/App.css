@@ -19,7 +19,6 @@ html{
 .head_L{
   height: 100%;
   width: 40%;
-  /* background-color: red; */
   color: white;
   font-family: sans-serif;
   font-size: 1.2rem;
@@ -43,7 +42,6 @@ span{
   margin-left: 8px;
 }
 .R_innerbox{
-  /* border: 1px solid white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +70,6 @@ ul li{
   align-items: center;
 }
 .best_off{
-  /* border: 5px solid white; */
   color: red;
   font-family: sans-serif;
   font-size: 1rem;
@@ -80,7 +77,6 @@ ul li{
   letter-spacing: 1px;
 }
 .n_arr{
-  /* border: 5px solid white; */
   color: white;
   font-family: sans-serif;
   font-size: 3rem;
@@ -90,7 +86,6 @@ ul li{
 
 }
 .Latest_head{
-  /* border: 5px solid red; */
   color: black;
   font-family: sans-serif;
   font-size: 1.4rem;
@@ -101,8 +96,6 @@ ul li{
   justify-content: space-between;
   border-bottom: 2px solid rgb(224, 220, 220);
   padding: 30px 0px;
-  /* background-color: pink; */
-  
 }
 .Late_P{
   font-weight: 400;
@@ -112,12 +105,10 @@ ul li{
   font-size: 0.6rem;
 }
 .second_box{
-  /* border: 1px solid blue; */
   margin: 50px 150px;
   
 }
 .card_box{
-  /* border: 1px solid green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -126,10 +117,8 @@ ul li{
 }
 .card{
   border: 1px solid rgb(210, 207, 207);
-  /* padding: 16% 16%; */
   margin-bottom: 20px;
   width: 32%;
-  /* border: 4px solid red; */
 }
 .titl{
   font-family: sans-serif;
@@ -167,7 +156,6 @@ ul li{
   margin: 20px;
 }
 .abt_six_box{
-  /* border: 1px solid green; */
   margin: 0px 150px;
 }
 .abt_head{
@@ -180,16 +168,13 @@ ul li{
   width: 100%;
 }
 .best_prods{
-  border: 1px solid red;
   margin-top: 40px;
   display: flex;
 }
 .best_L{
-  border: 1px solid purple;
   width: 50%;
 }
 .best_R{
-  border: 1px solid blue;
   width: 50%;
 }
 .Look{
@@ -197,7 +182,6 @@ ul li{
   font-family: sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
-  
 }
 .pra{
   font-family: sans-serif;
@@ -211,14 +195,13 @@ ul li{
   color: #007bff;
 }
 .unorder_L{
-  border: 1px solid red;
+
 }
 .unorder_L ul{
   display: flex;
   flex-direction: column;
 }
 .unorder_L ul li{
-  border: 1px solid red;
   color: grey;
 }
 .btn{
@@ -231,7 +214,6 @@ ul li{
   font-weight: 100;
 }
 .im_box{
-  /* border: 1px solid yellow; */
   margin-left: 10px;
 }
 .im_box img{
@@ -239,25 +221,21 @@ ul li{
   width: 100%;
 }
 .creative_uni{
-  /* border: 1px solid red; */
   border-top: 1px solid rgb(227, 225, 225);
   border-bottom: 1px solid rgb(227, 225, 225);
   padding: 55px 10px;
   margin-top: 50px;
 }
 .creative_inner_box{
-  /* border: 1px solid black; */
   background-color: #f7f7f7;
   padding: 25px;
   display: flex;
 }
 .cr_L{
   width: 60%;
-  /* border: 1px solid red; */
 }
 .cr_R{
   width: 40%;
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: end;
 }
@@ -299,12 +277,11 @@ ul li{
   color: red;
 }
 .six_pro{
-  /* border: 1px solid red; */
   background-image: url("./image/products-heading.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px;
+  padding: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,12 +325,9 @@ ul li{
   align-items: center;
 }
 .page_ch_inner_box{
-  /* border: 1px solid blue; */
   width: 30%;
-  /* padding: 30px; */
 }
 .page_ch_inner_box button{
-  /* padding: 15px; */
   margin: 5px;
   color: black;
   font-weight: 700;
@@ -379,8 +353,6 @@ ul li{
   align-items: center;
 }
 .our_backg{
-  /* border: 1px solid red; */
-  /* padding: 50px; */
   margin: 0px 150px;;
 }
 .ourback_head{
@@ -393,12 +365,10 @@ ul li{
   font-weight: 400;
 }
 .who_what_para{
-  /* border: 1px solid green; */
   padding-top: 50px;
   display: flex;
 }
 .our_back_img{
-  /* border: 2px solid red; */
   padding: 175px;
   width: 50%;
   background-image: url("./image/feature-image.jpg");
@@ -407,24 +377,16 @@ ul li{
   background-size: cover;
 }
 .our_back_para{
-  /* border: 2px solid blue; */
-  /* padding: 50px; */
   width: 50%;
   padding-left: 30px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 .our_back_para_box{
   border-bottom: 1px solid rgb(218, 215, 215);
   font-family: sans-serif;
   font-size: 0.74rem;
-  /* border: 3px solid red; */
   padding-bottom: 20px;
 }
 .our_back_logo_box{
-  /* border: 3px solid blueviolet; */
-  /* padding: 10px; */
   padding-top: 20px;
 }
 .our_back_para_box h3{
@@ -446,13 +408,9 @@ ul li{
   margin-left: 10px;
 }
 .our_team_box{
-  /* border: 1px solid red; */
   margin:   0px 150px;
-  /* padding: 50px; */
 }
 .team_members{
-  /* border: 1px solid orangered; */
-  /* padding: 50px; */
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -460,23 +418,19 @@ ul li{
 }
 .member_card{
   border: 1px solid rgb(227, 225, 225);
-  /* padding: 18% 0%; */
   width: 31.5%;
   margin-bottom: 30px;
 }
 .top_img_card{
-  /* border: 1px solid yellow; */
-  /* padding: 35%; */
+  
 }
 .bottom_intro_card{
-  /* border: 1px solid green; */
   font-family: sans-serif;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 25%; */
 }
 .top_img_card img{
   height: 100%;
@@ -514,9 +468,6 @@ ul li{
   align-items: center;
 }
 .prod_cus_glob_innerbox{
-  /* border: 2px solid red; */
-  /* padding: 50px; */
-  /* background-color: red; */
   width: 75%;
   display: flex;
   justify-content: space-between;
@@ -524,8 +475,6 @@ ul li{
 .pro_cus_glo_card{
   border: 2px solid white;
   width: 31.5%;
-  /* padding: 100px; */
-  /* background-color: white; */
 }
 .pcg_card_top{
   width: 100%;
@@ -537,7 +486,6 @@ ul li{
 }
 .pcg_card_bot{
   width: 100%;
-  /* padding: 120px; */
   background-color: white;
   padding: 30px;
 }
@@ -589,15 +537,12 @@ ul li{
 .logo{
   border-bottom: 1px solid rgb(228, 226, 226);
   margin: 0px 150px;
-  /* padding: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
 .logo_img{
-  /* border-bottom: 1px solid rgb(228, 226, 226); */
-  /* padding: 60px; */
   width: 18%;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -609,8 +554,6 @@ ul li{
 .lets_get{
   width: 100%;
   padding: 180px;
-  /* background-color: red; */
-  /* border: 1px solid red; */
   background-image: url("./image/contact-heading.jpg");
   background-position: center;
   background-size: cover;
@@ -634,13 +577,10 @@ ul li{
   padding-top: 20px;
 }
 .our_locatn{
-  /* border: 1px solid red; */
-  /* padding: 50px; */
   margin: 0px 150px;
 }
 .location_heading{
   border-bottom: 1px solid rgb(239, 237, 237);
-  /* padding: 50px; */
   font-family: sans-serif;
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -649,20 +589,15 @@ ul li{
   padding-bottom: 15px;
 }
 .map_cont_box{
-  /* border: 1px solid black; */
   display: flex;
   padding-top: 40px;
 }
 .map{
   width: 65%;
-  /* border: 1px solid orange; */
-  /* padding: 50px; */
 }
 .map_cont{
   width: 35%;
-  /* border: 1px solid purple; */
   padding-left: 30px;
-  /* padding: 50px; */
 }
 .map img{
   height: 100%;
@@ -670,11 +605,9 @@ ul li{
 }
 .map_content{
  border-bottom: 1px solid rgb(239, 236, 236);
- /* padding: 130px; */
  padding-bottom: 25px;
 }
 .map_logo{
-  /* border: 1px solid blue; */
   padding-top: 20px;
 }
 .map_content h5{
@@ -694,9 +627,7 @@ ul li{
   border: none;
 }
 .message_main_box{
-  /* border: 1px solid red; */
   margin: 0px 150px;
-  /* padding: 70px; */
 }
 .message_heading{
   font-family: sans-serif;
@@ -708,24 +639,16 @@ ul li{
   letter-spacing: 1px;
 }
 .form_main_box{
-  /* border: 1px solid red; */
-  /* padding: 50px; */
   display: flex;
   padding-top: 50px;
 }
 .L_form{
   width: 65%;
-  /* border: 1px solid blue; */
-  /* padding: 50px; */
   display: flex;
   flex-direction: column;
 }
 .R_form{
   width: 35%;
-  /* border: 1px solid yellow; */
-  /* border-top: 1px solid rgb(236, 233, 233); */
-  /* border-bottom: 1px solid rgb(206, 204, 204); */
-  /* padding: 50px; */
   margin-left: 40px;
 }
 .L_form input{

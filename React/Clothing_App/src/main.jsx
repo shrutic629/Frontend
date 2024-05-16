@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 // import './index.css'
 import Header from './Header'
-import './App.css'
+// import './App.css'
 import New_Arrival from './New_arrival'
 // import Option1 from './Option1'
 import Latest_prod from './Latest_prod'

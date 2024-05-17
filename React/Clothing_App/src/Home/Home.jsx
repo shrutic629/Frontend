@@ -9,15 +9,15 @@ import im_06 from '../image/product_06.jpg'
 
 import feature_i from '../image/feature-image.jpg'
 
-import Header from '../Header'
-import Footer from '../Footer'
+// import Header from '../Header'
+// import Footer from '../Footer'
 
 function Home()
 {
     return(
 
         <div className="home">
-            <Header/>
+            {/* <Header/> */}
 
             <div className="new_arr">
                 <div className="best_off">BEST OFFER</div>
@@ -175,7 +175,7 @@ function Home()
             
         </div>
 
-        <Footer/>
+        {/* <Footer/> */}
 
         </div>
         

@@ -1,5 +1,5 @@
-import Header from "../Header";
-import Footer from "../Footer";
+// import Header from "../Header";
+// import Footer from "../Footer";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faAngleRight } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +14,7 @@ function Our_Products()
 {
     return(
         <div className="our_prods">
-            <Header/>
+            {/* <Header/> */}
 
             <div className="six_pro">
                 <div className="back_inner1">NEW ARRIVALS</div>
@@ -155,7 +155,7 @@ function Our_Products()
             </div>
         </div> */}
 
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

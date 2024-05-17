@@ -1,5 +1,5 @@
-import Header from "../Header";
-import Footer from "../Footer"
+// import Header from "../Header";
+// import Footer from "../Footer"
 
 import team_01 from "../image/team_01.jpg"
 import team_02 from "../image/team_02.jpg"
@@ -13,7 +13,7 @@ function About_us()
 {
     return(
         <div className="about_us">
-            <Header/>
+            {/* <Header/> */}
 
             <div className="our_company">
                 <div className="best_off">ABOUT US</div>
@@ -158,7 +158,7 @@ function About_us()
 
             <Logo_box/>
 
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

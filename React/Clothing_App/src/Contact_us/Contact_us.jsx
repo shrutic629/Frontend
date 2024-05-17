@@ -1,14 +1,14 @@
-import Header from '../Header'
+// import Header from '../Header'
 import Logo_box from '../Logo_box';
 import map_img from '../image/Screenshot 2024-05-13 at 5.32.27 PM.png'
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 function Contact_us()
 {
     return(
         <div className="contact_us">
 
-            <Header/>
+            {/* <Header/> */}
 
             <div className="lets_get">
                 <h4>CONTACT US</h4>
@@ -66,7 +66,7 @@ function Contact_us()
         </div>
 
         <Logo_box/>
-        <Footer/>
+        {/* <Footer/> */}
 
         </div>
     )

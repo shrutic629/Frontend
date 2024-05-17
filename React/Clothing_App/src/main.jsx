@@ -29,9 +29,16 @@ import Lets_get_in from './Lets_get_in'
 import Our_Location from './Our_Location'
 import Message_box from './Message_box'
 
+import { BrowserRouter } from 'react-router-dom'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+    
+    
+   
 
     {/* Page 1 */}
     {/* <Header/>

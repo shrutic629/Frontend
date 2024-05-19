@@ -9,8 +9,11 @@ import team_05 from "../image/team_05.jpg"
 import team_06 from "../image/team_06.jpg"
 import Logo_box from "../Logo_box";
 
+import product from "./Product"
+
 function About_us()
 {
+
     return(
         <div className="about_us">
             {/* <Header/> */}
@@ -41,12 +44,28 @@ function About_us()
                 </div>
 
 
-                <div className="our_team_box">
+        <div className="our_team_box">
             <h1 className="ourback_head">Our Team Members</h1>
             <hr />
 
             <div className="team_members">
-                <div className="member_card">
+
+                {
+                    product.map((item)=>(
+                        <div className="member_card">
+                        <div className="top_img_card">
+                            <img src={team_01} alt="" />
+                        </div>
+                        <div className="bottom_intro_card">
+                            <h4>{item.name}</h4>
+                            <h6>{item.post}</h6>
+                            <p>{item.description}</p>
+                        </div>
+                    </div>
+                    ))
+                }
+
+                {/* <div className="member_card">
                     <div className="top_img_card">
                         <img src={team_01} alt="" />
                     </div>
@@ -55,9 +74,9 @@ function About_us()
                         <h6>CO-Founder</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="member_card">
+                {/* <div className="member_card">
                     <div className="top_img_card">
                         <img src={team_02} alt="" />
                     </div>
@@ -110,9 +129,9 @@ function About_us()
                         <h6>General Manager</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing itaque corporis nulla.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
-        </div>
+        </div> 
 
 
         <div className="prod_cust_glob">

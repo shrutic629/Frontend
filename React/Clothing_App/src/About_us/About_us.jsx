@@ -1,12 +1,12 @@
 // import Header from "../Header";
 // import Footer from "../Footer"
 
-import team_01 from "../image/team_01.jpg"
-import team_02 from "../image/team_02.jpg"
-import team_03 from "../image/team_03.jpg"
-import team_04 from "../image/team_04.jpg"
-import team_05 from "../image/team_05.jpg"
-import team_06 from "../image/team_06.jpg"
+// import team_01 from "../image/team_01.jpg"
+// import team_02 from "../image/team_02.jpg"
+// import team_03 from "../image/team_03.jpg"
+// import team_04 from "../image/team_04.jpg"
+// import team_05 from "../image/team_05.jpg"
+// import team_06 from "../image/team_06.jpg"
 import Logo_box from "../Logo_box";
 
 import product from "./Product"
@@ -54,7 +54,8 @@ function About_us()
                     product.map((item)=>(
                         <div className="member_card">
                         <div className="top_img_card">
-                            <img src={team_01} alt="" />
+                            <img src={item.image_name} alt="" />
+                            {/* <img src={team_01} alt="" />  */}
                         </div>
                         <div className="bottom_intro_card">
                             <h4>{item.name}</h4>

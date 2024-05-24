@@ -10,6 +10,8 @@ import im_04 from '../image/product_04.jpg'
 import im_05 from '../image/product_05.jpg'
 import im_06 from '../image/product_06.jpg'
 
+import product1 from '../Home/Product1'
+
 function Our_Products()
 {
     return(
@@ -38,7 +40,37 @@ function Our_Products()
         </div> */}
 
             <div className="card_box">
-                <div className="card">
+
+            {
+                    product1.map((item)=>(
+                        <div className="card">
+                    <div className="imag">
+                        <img src={item.image} alt="safs" />
+                    </div>
+                    <div className="content">
+                        <div className="tittle">
+                            <div className="titl">{item.comment} </div>
+                            <div className="dollar">{item.currency} {item.price}</div>
+                        </div>
+                        <div className="para">{item.description}</div>
+                        <div className="reviews">
+                            <div className="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div className="rev">{item.review}</div>
+                        </div>
+                    </div>
+                </div>
+                        
+                    ))
+                }
+
+                {/* <div className="card">
                     <div className="imag">
                         <img src={im_01} alt="safs" />
                     </div>
@@ -93,8 +125,8 @@ function Our_Products()
                     </div>
                 </div>
                 
-            </div>
-            <div className="card">
+                </div>
+                <div className="card">
             <div className="imag">
                         <img src={im_04} alt="safs" />
                     </div>
@@ -109,8 +141,8 @@ function Our_Products()
                             <div className="rev">Reviews(48)</div>
                     </div>
                 </div>
-            </div>
-            <div className="card">
+                </div>
+                <div className="card">
             <div className="imag">
                         <img src={im_05} alt="safs" />
                     </div>
@@ -125,8 +157,8 @@ function Our_Products()
                             <div className="rev">Reviews(16)</div>
                     </div>
                 </div>
-            </div>
-            <div className="card">
+                </div>
+                <div className="card">
             <div className="imag">
                         <img src={im_06} alt="safs" />
                     </div>
@@ -141,7 +173,7 @@ function Our_Products()
                             <div className="rev">Reviews(32)</div>
                     </div>
                 </div>
-            </div>
+                </div> */}
         </div>
          </div>
 
